@@ -1,6 +1,7 @@
 package zero.to.mastery.data_structures.arrays;
 
 public class ReverseString {
+
     // reverse method 1
     private static String ReverseString1(String string) {
         String result = ""; //It's more recommended to use "StringBuilder" object when manipulating strings
