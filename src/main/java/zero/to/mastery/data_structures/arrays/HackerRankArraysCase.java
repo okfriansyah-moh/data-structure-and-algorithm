@@ -2,6 +2,7 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class HackerRankArraysCase {
 
@@ -93,6 +94,35 @@ public class HackerRankArraysCase {
             countOccurence = 0;
             iterasi++;
         }
+        List<List<Integer>> firstIteration = new ArrayList<>();
+        firstIteration.get(0);
         return result;
+
+    }
+
+    // HARD array case in HR
+    //2,4,7 = b+1 = 5
+    //        1,3,1 = b+1 = 4
+    //                3,5,13 = b+1 = 6
+    // n = 5
+    // 0 7 0 0 -7
+    // 1 0 0 -1 0
+    // 0 0 13 0 0
+    // 1 7 13 -1 -7
+    // 1 8 21 20 13
+    // https://www.youtube.com/watch?v=JtJKn_c9lB4
+
+
+    // Print even and odd case in java
+    private void javaCaseHR() {
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextInt()) {
+            int n = scanner.nextInt();
+            if ((n % 2 == 1) || (n % 2 == 0 && n >= 6 && n <= 20)) {
+                System.out.println("Weird");
+            } else if ((n % 2 == 0 && n >= 2 && n <= 5) || (n % 2 == 0 && n > 20)) {
+                System.out.println("Not Weird");
+            }
+        }
     }
 }
