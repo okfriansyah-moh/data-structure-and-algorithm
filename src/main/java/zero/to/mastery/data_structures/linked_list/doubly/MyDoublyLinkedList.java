@@ -1,33 +1,32 @@
-package zero.to.mastery.data_structures.linked_list;
+package zero.to.mastery.data_structures.linked_list.doubly;
 
-public class MySinglyLinkedList {
-    private MySinglyLinkedNode head;
-    private MySinglyLinkedNode tail;
+public class MyDoublyLinkedList {
+    private Node head;
+    private Node tail;
     private int length;
 
-    public MySinglyLinkedList(int value) {
-        head = new MySinglyLinkedNode(value);
+    public MyDoublyLinkedList(int value) {
+        head = new Node(value);
         tail = head;
         length = 1;
     }
 
     public void prepend(int value) {
-        head = new MySinglyLinkedNode(value, head);
+        Node newNode = new Node(value, null, head);
+        head.setPrevious(newNode);
+        head = newNode;
         length ++;
     }
 
     public void append(int value) {
-        MySinglyLinkedNode newNode = new MySinglyLinkedNode(value);
+        Node newNode = new Node(value, tail, null);
         tail.setNext(newNode);
         tail = newNode;
         length ++;
     }
 
     public void printList() {
-        if(head == null) {
-            return;
-        }
-        MySinglyLinkedNode currentNode = head;
+        Node currentNode = head;
         System.out.print(currentNode.getValue());
         currentNode = currentNode.getNext();
         while (currentNode != null) {
@@ -49,15 +48,16 @@ public class MySinglyLinkedList {
             return;
         }
 
-        MySinglyLinkedNode leader = traverseToIndex(index - 1);
-        MySinglyLinkedNode nextNode = leader.getNext();
+        Node leader = traverseToIndex(index - 1);
+        Node follower = leader.getNext();
 
-        MySinglyLinkedNode newNode = new MySinglyLinkedNode(value, nextNode);
+        Node newNode = new Node(value, leader, follower);
         leader.setNext(newNode);
+        follower.setPrevious(newNode);
         length++;
     }
 
-    // insert method cara 2
+    // insert methode ke 2
     public void insert2(int index, int value) {
         if (index < 0 || index > length) {
             System.err.println("Index Out Of Bounds For Length " + length);
@@ -66,13 +66,15 @@ public class MySinglyLinkedList {
         } else if (index == length) {
             append(value);
         } else {
-            MySinglyLinkedNode current = head;
+            Node current = head;
             for (int i = 0; i < index - 1; i++) {
                 current = current.getNext();
             }
-            MySinglyLinkedNode newNode = new MySinglyLinkedNode(value);
+            Node newNode = new Node(value);
             newNode.setNext(current.getNext());
             current.setNext(newNode);
+            newNode.setPrevious(current);
+            newNode.getNext().setPrevious(newNode);
             length++;
         }
     }
@@ -84,21 +86,23 @@ public class MySinglyLinkedList {
             return;
         }
 
-        MySinglyLinkedNode leader = traverseToIndex(index - 1);
-        MySinglyLinkedNode nodeToRemove = leader.getNext();
+        Node leader = traverseToIndex(index - 1);
+        Node nodeToRemove = leader.getNext();
         leader.setNext(nodeToRemove.getNext());
+        nodeToRemove.getNext().setPrevious(leader);
         length--;
     }
 
-    //remove cara ke 2
+    // remove methode ke 2
     public void remove2(int index) {
         if (index < 0 || index > length) {
             System.err.println("Index Out Of Bounds For Length " + length);
         } else if (index == 0) {
             head = this.head.getNext();
+            this.head.setPrevious(null);
             length--;
         } else {
-            MySinglyLinkedNode current = head;
+            Node current = head;
             int i;
             for (i = 0; i < index - 1; i++) {
                 current = current.getNext();
@@ -107,41 +111,15 @@ public class MySinglyLinkedList {
             length--;
             if (i == length - 1) {
                 tail = current;
+            } else {
+                current.getNext().setPrevious(current);
             }
         }
     }
 
-    public void reverse() {
-        MySinglyLinkedNode first = head;
-        tail = head;
-        MySinglyLinkedNode second = first.getNext();
-        for (int i = 0; i < length - 1; i++) {
-            MySinglyLinkedNode temp = second.getNext();
-            second.setNext(first);
-            first = second;
-            second = temp;
-        }
-        head.setNext(null);
-        head = first;
-    }
-
-    // reverse cara ke 2
-    public MySinglyLinkedList reverse2(MySinglyLinkedList mySinglyLinkedList) {
-        MySinglyLinkedList newList = new MySinglyLinkedList(mySinglyLinkedList.head.getValue());
-        MySinglyLinkedNode current = mySinglyLinkedList.head;
-        while (current.getNext() != null) {
-            current = current.getNext();
-            MySinglyLinkedNode newNode = new MySinglyLinkedNode(current.getValue());
-            newNode.setNext(newList.head);
-            newList.head = newNode;
-            newList.length++;
-        }
-        return newList;
-    }
-
-    public MySinglyLinkedNode traverseToIndex(int index) {
+    public Node traverseToIndex(int index) {
         index = wrapIndex(index);
-        MySinglyLinkedNode currentNode = head;
+        Node currentNode = head;
         for (int i = 0; i < index; i++) {
             currentNode = currentNode.getNext();
         }
@@ -152,11 +130,11 @@ public class MySinglyLinkedList {
         return Math.max(Math.min(index, length - 1), 0);
     }
 
-    public MySinglyLinkedNode getHead() {
+    public Node getHead() {
         return head;
     }
 
-    public MySinglyLinkedNode getTail() {
+    public Node getTail() {
         return tail;
     }
 
@@ -165,18 +143,14 @@ public class MySinglyLinkedList {
     }
 
     public static void main(String[] args) {
-        MySinglyLinkedList mySinglyLinkedList = new MySinglyLinkedList(5);
-        mySinglyLinkedList.append(8);
+        MyDoublyLinkedList mySinglyLinkedList = new MyDoublyLinkedList(5);
+        mySinglyLinkedList.append(7);
         mySinglyLinkedList.append(4);
         mySinglyLinkedList.prepend(10);
         mySinglyLinkedList.printList();
         mySinglyLinkedList.insert(2,15);
         mySinglyLinkedList.printList();
-        mySinglyLinkedList.remove(100);
-        mySinglyLinkedList.remove(2);
-        mySinglyLinkedList.printList();
-        mySinglyLinkedList.reverse();
+        mySinglyLinkedList.remove(0);
         mySinglyLinkedList.printList();
     }
 }
-

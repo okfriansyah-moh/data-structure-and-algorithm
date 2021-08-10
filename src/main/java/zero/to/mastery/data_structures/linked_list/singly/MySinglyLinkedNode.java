@@ -1,4 +1,4 @@
-package zero.to.mastery.data_structures.linked_list;
+package zero.to.mastery.data_structures.linked_list.singly;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
