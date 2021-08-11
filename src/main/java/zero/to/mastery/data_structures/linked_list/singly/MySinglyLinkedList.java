@@ -172,7 +172,6 @@ public class MySinglyLinkedList {
         mySinglyLinkedList.printList();
         mySinglyLinkedList.insert(2,15);
         mySinglyLinkedList.printList();
-        mySinglyLinkedList.remove(100);
         mySinglyLinkedList.remove(2);
         mySinglyLinkedList.printList();
         mySinglyLinkedList.reverse();
