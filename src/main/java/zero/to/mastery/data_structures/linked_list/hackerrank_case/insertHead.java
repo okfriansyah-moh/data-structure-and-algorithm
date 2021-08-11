@@ -38,4 +38,31 @@ public class insertHead {
         }
         System.out.println("================================");
     }
+
+    /*
+    sample input :
+        2
+        0 2 10
+        5 3 5
+
+    sample output :
+        2 6 14 30 62 126 254 510 1022 2046
+        8 14 26 50 98
+     */
+    private void exponential() {
+        Scanner scanner = new Scanner(System.in);
+        int queryLength = scanner.nextInt();
+        for (int i = 0; i < queryLength; i++) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int secondQlength = scanner.nextInt();
+            int result = a;
+            for (int j = 0; j < secondQlength; j++) {
+                result += Math.pow(2, j) * b;
+                System.out.printf("%s " , result);
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
 }
