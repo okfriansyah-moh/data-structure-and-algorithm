@@ -1,3 +1,14 @@
+Previously java used QuickSort for primitives and MergeSort for Objects. In the latest versions', java uses 'Dual-Pivot Quicksort' & 'TimSort'.
+TIMSORT is a hybrid algorithm derived from merge sort and insertion sort. to learn more about TimSort & Dual-pivot quicksort check
+https://en.wikipedia.org/wiki/Timsort
+https://www.geeksforgeeks.org/dual-pivot-quicksort/
+
+Here is stable vs unstable sorting algorithms
+https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important
+
+
+Exercise Interview Question about sort :
+
 //#1 - Sort 10 schools around your house by distance:
 we can use insertion sort. Why? the input is only small. Only 10. 
 It really fast on small data. It could be this 10 school
