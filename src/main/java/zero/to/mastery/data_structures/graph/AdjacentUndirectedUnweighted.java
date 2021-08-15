@@ -1,5 +1,6 @@
 package zero.to.mastery.data_structures.graph;
 
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -59,5 +60,22 @@ public class AdjacentUndirectedUnweighted {
         graph.addEdge(6, 5);
         graph.showConnections();
         System.out.println("number of nodes = " + graph.getNumberOfNodes());
+
+        // Time complexity proof
+//        try {
+//            for (int i = 0; i <=1000; i++){
+//                System.out.println("i ke " + i);
+//                anotherTime();
+//            }
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+    }
+
+    private static void anotherTime() throws Exception{
+        for (int j = 0; j <=1000; j++){
+            Thread.sleep(1000);
+            System.out.println("j ke " + j + " and time " + ZonedDateTime.now());
+        }
     }
 }
