@@ -1,16 +1,24 @@
-package zero.to.mastery.data_structures.trees;
+package zero.to.mastery.algorithms.searching;
 
-public class BinarySearchTree {
+import java.util.ArrayList;
+import java.util.List;
 
-    private BinaryNode node;
+public class DepthFirstSearch {
+    enum SearchType {
+        IN_ORDER,
+        PRE_ORDER,
+        POST_ORDER
+    }
 
-    public BinarySearchTree() {
+    private SearchNode node;
+
+    public DepthFirstSearch() {
         node = null;
     }
 
     // insert process in video
     private void insert(int value) {
-        BinaryNode newNode = new BinaryNode(value);
+        SearchNode newNode = new SearchNode(value);
         if (this.node == null) {
             this.node = newNode;
         } else {
@@ -35,17 +43,17 @@ public class BinarySearchTree {
         }
     }
 
-    public BinaryNode lookup(int value) {
-        if (this.node == null) {
+    public SearchNode lookup(int value) {
+        if(node == null) {
             return null;
         }
-        var currentNode = this.node;
+        SearchNode currentNode = node;
         while (currentNode != null) {
-            if (value < currentNode.getValue()) {
+            if(value < currentNode.getValue()) {
                 currentNode = currentNode.getLeft();
-            } else if (value > currentNode.getValue()) {
+            } else if(value > currentNode.getValue()) {
                 currentNode = currentNode.getRight();
-            } else if (value == currentNode.getValue()) {
+            } else {
                 return currentNode;
             }
         }
@@ -57,8 +65,8 @@ public class BinarySearchTree {
             return;
         }
 
-        BinaryNode nodeToRemove = node;
-        BinaryNode parentNode = null;
+        SearchNode nodeToRemove = node;
+        SearchNode parentNode = null;
         while (nodeToRemove.getValue() != value) { //Searching for the node to remove and it's parent
             parentNode = nodeToRemove;
             if (value < nodeToRemove.getValue()) {
@@ -68,13 +76,13 @@ public class BinarySearchTree {
             }
         }
 
-        BinaryNode replacementNode = null;
+        SearchNode replacementNode = null;
         if (nodeToRemove.getRight() != null) { //We have a right node
             replacementNode = nodeToRemove.getRight();
             if(replacementNode.getLeft() == null) { //We don't have a left node
                 replacementNode.setLeft(nodeToRemove.getLeft());
             } else { //We have a have a left node, lets find the leftmost
-                BinaryNode replacementParentNode = nodeToRemove;
+                SearchNode replacementParentNode = nodeToRemove;
                 while (replacementNode.getLeft() != null) {
                     replacementParentNode = replacementNode;
                     replacementNode = replacementNode.getLeft();
@@ -102,7 +110,7 @@ public class BinarySearchTree {
         printTree(node);
     }
 
-    private void printTree(BinaryNode node) {
+    private void printTree(SearchNode node) {
         System.out.print(node.getValue());
         System.out.println();
         count++;
@@ -117,39 +125,50 @@ public class BinarySearchTree {
         count--;
     }
 
-    private static boolean isValidBST(BinaryNode root, BinaryNode left, BinaryNode right) {
-        if (root == null) return true;
+    // DFS Most of the time used recursive
+    public List<Integer> depthFirstSearchInOder(SearchType searchType) {
+        return depthFirstSearchInOder(node, new ArrayList<>(), searchType);
+    }
 
-        // if left node exist then check it has
-        // correct data or not i.e. left node's data
-        // should be less than root's data
-        if (left != null && root.getValue() <= left.getValue()) {
-            return false;
+    // Bedanya cuma di posisi dimana list.add nya aja untuk masing2 tipe dfs.
+    // Kalo pre order di add sebelum left
+    // Kalo in order di add setelah left dan sebelum right
+    // Kalo post order di add setelah semuanya, left dan right
+    private List<Integer> depthFirstSearchInOder(SearchNode node, ArrayList<Integer> list, SearchType searchType) {
+
+        if(searchType == SearchType.PRE_ORDER) {
+            list.add(node.getValue());
+        }
+        if(node.getLeft() != null) {
+            depthFirstSearchInOder(node.getLeft(), list, searchType);
         }
 
-        // if right node exist then check it has
-        // correct data or not i.e. right node's data
-        // should be greater than root's data
-        if (right != null && root.getValue() >= right.getValue()) {
-            return false;
+        if(searchType == SearchType.IN_ORDER) {
+            list.add(node.getValue());
+        }
+        if(node.getRight() != null) {
+            depthFirstSearchInOder(node.getRight(), list, searchType);
         }
 
-        // check recursively for every node.
-        return isValidBST(root.getLeft(), left, root) && isValidBST(root.getRight(), root, right);
+        if(searchType == SearchType.POST_ORDER) {
+            list.add(node.getValue());
+        }
+        return list;
     }
 
     public static void main(String[] args) {
-        BinarySearchTree binarySearchTree = new BinarySearchTree();
-        binarySearchTree.insert(9);
-        binarySearchTree.insert(4);
-        binarySearchTree.insert(6);
-        binarySearchTree.insert(20);
-        binarySearchTree.insert(170);
-        binarySearchTree.insert(15);
-        binarySearchTree.insert(1);
-        binarySearchTree.remove(170);
-        binarySearchTree.printTree();
-        System.out.println("lookup node " + binarySearchTree.lookup(20).getValue());
-        System.out.println("IS BST VALID ? " + isValidBST(binarySearchTree.node, null, null));
+        DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
+        depthFirstSearch.insert(9);
+        depthFirstSearch.insert(4);
+        depthFirstSearch.insert(6);
+        depthFirstSearch.insert(20);
+        depthFirstSearch.insert(170);
+        depthFirstSearch.insert(15);
+        depthFirstSearch.insert(1);
+        depthFirstSearch.remove(170);
+        depthFirstSearch.printTree();
+        System.out.println("Depth first search - in order " + depthFirstSearch.depthFirstSearchInOder(SearchType.IN_ORDER));
+        System.out.println("Depth first search - pre order " + depthFirstSearch.depthFirstSearchInOder(SearchType.PRE_ORDER));
+        System.out.println("Depth first search - post order " + depthFirstSearch.depthFirstSearchInOder(SearchType.POST_ORDER));
     }
 }
