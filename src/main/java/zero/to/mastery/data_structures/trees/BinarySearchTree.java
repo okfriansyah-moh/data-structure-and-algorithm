@@ -8,6 +8,27 @@ public class BinarySearchTree {
         node = null;
     }
 
+    private static boolean isValidBST(BinaryNode root, BinaryNode left, BinaryNode right) {
+        if (root == null) return true;
+
+        // if left node exist then check it has
+        // correct data or not i.e. left node's data
+        // should be less than root's data
+        if (left != null && root.getValue() <= left.getValue()) {
+            return false;
+        }
+
+        // if right node exist then check it has
+        // correct data or not i.e. right node's data
+        // should be greater than root's data
+        if (right != null && root.getValue() >= right.getValue()) {
+            return false;
+        }
+
+        // check recursively for every node.
+        return isValidBST(root.getLeft(), left, root) && isValidBST(root.getRight(), root, right);
+    }
+
     // insert process in video
     private void insert(int value) {
         BinaryNode newNode = new BinaryNode(value);
@@ -115,27 +136,6 @@ public class BinarySearchTree {
             printTree(node.getRight());
         }
         count--;
-    }
-
-    private static boolean isValidBST(BinaryNode root, BinaryNode left, BinaryNode right) {
-        if (root == null) return true;
-
-        // if left node exist then check it has
-        // correct data or not i.e. left node's data
-        // should be less than root's data
-        if (left != null && root.getValue() <= left.getValue()) {
-            return false;
-        }
-
-        // if right node exist then check it has
-        // correct data or not i.e. right node's data
-        // should be greater than root's data
-        if (right != null && root.getValue() >= right.getValue()) {
-            return false;
-        }
-
-        // check recursively for every node.
-        return isValidBST(root.getLeft(), left, root) && isValidBST(root.getRight(), root, right);
     }
 
     public static void main(String[] args) {
