@@ -1,10 +1,62 @@
 package zero.to.mastery.data_structures.arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class HackerRankArraysCase {
+
+    // Function that returns true if
+    // str is a palindrome
+    static boolean isPalindrome(String str)
+    {
+
+        // Pointers pointing to the beginning
+        // and the end of the string
+        int i = 0, j = str.length() - 1;
+
+        // While there are characters to compare
+        while (i < j) {
+
+            // If there is a mismatch
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+
+            // Increment first pointer and
+            // decrement the other
+            i++;
+            j--;
+        }
+
+        // Given string is a palindrome
+        return true;
+    }
+
+    /* function to check whether two strings are
+    anagram of each other */
+    static boolean areAnagram(char[] str1, char[] str2)
+    {
+        // Get lenghts of both strings
+        int n1 = str1.length;
+        int n2 = str2.length;
+
+        // If length of both strings is not same,
+        // then they cannot be anagram
+        if (n1 != n2)
+            return false;
+
+        // Sort both strings
+        Arrays.sort(str1);
+        Arrays.sort(str2);
+
+        // Compare sorted strings
+        for (int i = 0; i < n1; i++)
+            if (str1[i] != str2[i])
+                return false;
+
+        return true;
+    }
 
     //Common array function, to convert int into an array
     private void convertIntegToArra() {
