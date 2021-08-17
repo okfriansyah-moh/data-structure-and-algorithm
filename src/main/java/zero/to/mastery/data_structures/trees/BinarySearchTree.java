@@ -25,7 +25,7 @@ public class BinarySearchTree {
             return false;
         }
 
-        // check recursively for every node.
+        // check recursively for every node, is left true? and right also true?.
         return isValidBST(root.getLeft(), left, root) && isValidBST(root.getRight(), root, right);
     }
 
