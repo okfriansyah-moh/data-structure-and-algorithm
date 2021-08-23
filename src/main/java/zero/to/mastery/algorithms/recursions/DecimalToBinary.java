@@ -1,6 +1,8 @@
 package zero.to.mastery.algorithms.recursions;
 
 public class DecimalToBinary {
+    // rumus decimal to binary
+    // n mod 2 + 10 * f(n/2)
     private static int decimalToBinary(int n) {
         if (n == 0) {
             return 0;
