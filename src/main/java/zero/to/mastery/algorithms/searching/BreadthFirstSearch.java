@@ -169,7 +169,7 @@ public class BreadthFirstSearch {
         }
         return breadthFirstSearchRecursively(queue, list);
     }
-
+    
     public static void main(String[] args) {
         BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
         breadthFirstSearch.insert(9);
