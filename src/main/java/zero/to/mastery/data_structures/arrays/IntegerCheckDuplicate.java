@@ -1,6 +1,20 @@
 package zero.to.mastery.data_structures.arrays;
 
 public class IntegerCheckDuplicate {
+
+    // O(n^2) approach
+    public boolean isUnique2(int[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+            for (int j = i+1; j < intArray.length; j++) {
+                if (intArray[i] == intArray[j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    // O(n) approach
     public boolean isUnique(int[] intArray) {
         // TODO
         int temp = 0;
