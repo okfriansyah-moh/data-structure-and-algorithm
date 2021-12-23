@@ -1,6 +1,7 @@
 package zero.to.mastery.algorithms.sorting;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class QuickSort {
 
@@ -71,7 +72,7 @@ public class QuickSort {
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
-
+        HashMap<Integer,Integer> mapData = new HashMap<>();
         return i + 1;
     }
 

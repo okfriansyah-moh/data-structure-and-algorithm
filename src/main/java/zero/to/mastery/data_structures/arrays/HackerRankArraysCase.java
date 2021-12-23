@@ -130,10 +130,21 @@ public class HackerRankArraysCase {
      *
      */
 
+    public static void main(String[] args) {
+        List<String> strings = new ArrayList<>();
+        strings.add("23123");
+        List<String> queries = new ArrayList<>();
+        queries.add("23123");
+        queries.add("0");
+        System.out.println((matchingStrings(strings, queries)));
+        String[] a = {"23123"};
+        String[] b = {"23123","0"};
+        System.out.println(Arrays.toString(matchingStringsArray(a, b)));
+    }
+
     public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
         // Write your code here
         List<Integer> result = new ArrayList<>();
-        int iterasi = 0;
         int countOccurence = 0;
         for (int i = 0; i < queries.size(); i++) {
             for (int j=0; j < strings.size(); j++) {
@@ -144,12 +155,46 @@ public class HackerRankArraysCase {
             }
             result.add(countOccurence);
             countOccurence = 0;
-            iterasi++;
         }
-        List<List<Integer>> firstIteration = new ArrayList<>();
-        firstIteration.get(0);
         return result;
 
+    }
+
+    public static Integer[] matchingStringsArray(String[] strings, String[] queries) {
+        // Write your code here
+        List<Integer> result = new ArrayList<>();
+        int countOccurence = 0;
+        for (int i = 0; i < queries.length; i++) {
+            for (int j=0; j < strings.length; j++) {
+                System.out.println(queries[i] + " equals to " + strings[j]);
+                if (queries[i].equals((strings[j]))) {
+                    countOccurence++;
+                }
+            }
+            result.add(countOccurence);
+            countOccurence = 0;
+        }
+        Integer[] finalResult = result.toArray(new Integer[result.size()]);
+        return finalResult;
+
+    }
+
+    public static String occurences( String[] strings, String[] queries ) {
+
+        //Insert your code here
+        String result = "";
+        int countOccurence = 0;
+        for (int i = 0; i < queries.length; i++) {
+            for (int j=0; j < strings.length; j++) {
+                System.out.println(queries[i] + " equals to " + strings[j]);
+                if (queries[i].equals((strings[j]))) {
+                    countOccurence++;
+                }
+            }
+            result += countOccurence + "";
+            countOccurence = 0;
+        }
+        return result;
     }
 
     // HARD array case in HR
