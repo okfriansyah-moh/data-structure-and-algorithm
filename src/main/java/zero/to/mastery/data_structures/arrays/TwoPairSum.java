@@ -1,8 +1,13 @@
 package zero.to.mastery.data_structures.arrays;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class TwoPairSum {
+
+    // Given an array of integers, return the
+    // indices of the two numbers that add up to
+    // a given target
 
     // Two sum method 1
     public int[] twoSum(int[] nums, int target) {
@@ -34,10 +39,30 @@ public class TwoPairSum {
         return result;
     }
 
+    // method 3 using hashmap
+    public int[] twoSum3(int[] nums, int target) {
+        HashMap<Integer, Integer> numsMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            // Lgs dicari nih ada gk number to findnya di dalam list nums, kalo ada brarti
+            // currentMapValnya gk kosong dan lebih dari 0
+            // Makanya bisa lgs return indicesnya
+            // else kita store numberToFindnya dah
+            var currentMapVal = numsMap.get(nums[i]);
+            System.out.println(numsMap);
+            if (currentMapVal != null && currentMapVal >= 0) {
+                return new int[] {currentMapVal, i};
+            } else {
+                var numberToFind = target - nums[i];
+                numsMap.put(numberToFind, i);
+            }
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
-        int[] intArray = {2,7,11,15};
+        int[] intArray = {2,7,10,15,11};
         TwoPairSum twoPairSum = new TwoPairSum();
-        int[] result = twoPairSum.twoSum2(intArray, 26);
+        int[] result = twoPairSum.twoSum3(intArray, 17);
         System.out.println(Arrays.toString(result));
     }
 }
