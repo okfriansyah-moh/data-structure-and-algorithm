@@ -43,12 +43,12 @@ public class TwoPairSum {
     public int[] twoSum3(int[] nums, int target) {
         HashMap<Integer, Integer> numsMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            // Lgs dicari nih ada gk number to findnya di dalam list nums, kalo ada brarti
+            // Lgs dicari nih ada gk number to findnya di dalam list nums,
+            // kalo ada brarti
             // currentMapValnya gk kosong dan lebih dari 0
             // Makanya bisa lgs return indicesnya
             // else kita store numberToFindnya dah
             var currentMapVal = numsMap.get(nums[i]);
-            System.out.println(numsMap);
             if (currentMapVal != null && currentMapVal >= 0) {
                 return new int[] {currentMapVal, i};
             } else {
