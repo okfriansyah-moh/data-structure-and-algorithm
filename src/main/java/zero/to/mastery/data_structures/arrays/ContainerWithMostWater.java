@@ -2,7 +2,10 @@ package zero.to.mastery.data_structures.arrays;
 
 public class ContainerWithMostWater {
 
-    // using two shifting pointers using O(n)
+    // Cari di dalam array jumlah unit water yg paling gede bisa ditampung
+
+    // using two shifting pointer technique using O(n)
+    // The smallest pointer will move through the iteration
     public int maxAreaOptimize(int[] height) {
         int maxArea = 0, p1 = 0, p2 = height.length - 1;
         while (p1 < p2) {

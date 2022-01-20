@@ -2,7 +2,58 @@ package zero.to.mastery.data_structures.arrays;
 
 public class TrappingRainWater {
 
+    // optimize using two pointers technique
+    // The two point technique was where we initialized
+    // some pointer on the left and some points are on the right,
+    // and then we conditionally try to figure out
+    // what rationale was there for us to move one of these
+    // pointers inwards.
+    // And while we were moving them inwards,
+    // we were collecting some information that we had determined based
+    // on our equation.
+    public int trap3(int[] height) {
+        int currentWater = 0,
+                maxLeft = 0,
+                maxRight = 0, p1 = 0, p2 = height.length - 1;
+        while (p1 < p2) {
+            if (height[p1] <= height[p2]) {
+                maxLeft = Math.max(maxLeft,height[p1]);
+                currentWater += maxLeft - height[p1];
+                p1++;
+            } else {
+                maxRight = Math.max(maxRight,height[p2]);
+                currentWater += maxRight - height[p2];
+                p2--;
+            }
 
+        }
+        return currentWater;
+    }
+
+    public int trap4(int[] height) {
+        int currentWater = 0,
+                maxLeft = 0,
+                maxRight = 0, p1 = 0, p2 = height.length - 1;
+        while (p1 < p2) {
+            if (height[p1] <= height[p2]) {
+                if (height[p1] >= maxLeft) {
+                    maxLeft = height[p1];
+                } else {
+                    currentWater += maxLeft - height[p1];
+                }
+                p1++;
+            } else {
+                if (height[p2] >= maxRight) {
+                    maxRight = height[p2];
+                } else {
+                    currentWater += maxRight - height[p2];
+                }
+                p2--;
+            }
+
+        }
+        return currentWater;
+    }
 
     // unOptimize solution using for loop all
     public int trap(int[] height) {
@@ -86,7 +137,7 @@ public class TrappingRainWater {
     public static void main(String[] args) {
         TrappingRainWater trappingRainWater = new TrappingRainWater();
         int[] intArray = {5,0,3,0,0,0,2,3,4,2,1};
-        int totalWater = trappingRainWater.trap2(intArray);
+        int totalWater = trappingRainWater.trap3(intArray);
         System.out.println(totalWater);
     }
 }
