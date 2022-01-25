@@ -4,6 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TypedOutStrings {
+
+    // using two pointer technique
+    public boolean backspaceCompare2(String s, String t) {
+        int p1 = s.length() - 1, p2 = t.length() - 1;
+        String resultP1 = pointerWhile(p1, s);
+        String resultP2 = pointerWhile(p2, t);
+        System.out.println("result p1 = " + resultP1 + " result p2 = " + resultP2);
+        return resultP1.equals(resultP2);
+    }
+
+    private String pointerWhile(int p, String data) {
+        String result = "";
+        while (p >= 0) {
+            if ('#' != data.charAt(p))  {
+                result += data.charAt(p);
+                p--;
+            } else {
+                int nBackWard = 2;
+                while (nBackWard > 0) {
+                    nBackWard--;
+                    p--;
+                    if (p >= 0 && data.charAt(p) == '#') {
+                        nBackWard = nBackWard + 2;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
     public boolean backspaceCompare(String s, String t) {
         List<String> finalS = buildString(s);
         List<String> finalT = buildString(t);
@@ -40,10 +70,21 @@ public class TypedOutStrings {
 
     public static void main(String[] args) {
         TypedOutStrings typedOutStrings = new TypedOutStrings();
+        String c =  "ab#c";
+        String d = "ad#c";
         String s = "ab##";
         String t = "c#d#";
         String a = "a##c";
         String b = "#a#c";
-        System.out.println(typedOutStrings.backspaceCompare(a,b));
+        String x = "abc#d";
+        String y = "abzz##d";
+        String e = "xywrrmp";
+        String f = "xywrrmu#p";
+        String z = "bxj##tw";
+        String u = "bxj###tw";
+        String g = "bxj##tw";
+        String h = "bxo#j##tw";
+        typedOutStrings.backspaceCompare2(e,f);
+//        System.out.println();
     }
 }
