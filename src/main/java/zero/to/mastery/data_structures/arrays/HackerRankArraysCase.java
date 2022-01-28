@@ -3,6 +3,7 @@ package zero.to.mastery.data_structures.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class HackerRankArraysCase {
@@ -11,7 +12,7 @@ public class HackerRankArraysCase {
     // str is a palindrome
     static boolean isPalindrome(String str)
     {
-
+        str = str.replace("/[^A-Za-z0-9]/g","").toLowerCase(Locale.ROOT);
         // Pointers pointing to the beginning
         // and the end of the string
         int i = 0, j = str.length() - 1;

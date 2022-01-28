@@ -1,8 +1,26 @@
 package zero.to.mastery.data_structures;
 
+import java.util.HashMap;
+
 public class LongestSubstringWithoutRepeatingChar {
 
-        public int lengthOfLongestSubstringUsingWhile(String s) {
+    public int lengthOfLongestSubstringOptimize(String s) {
+        if (s.length() <= 1) return s.length();
+        HashMap<Character, Integer> seenChars = new HashMap<>();
+        int left = 0, longest = 0;
+        for (int right = 0 ; right < s.length(); right++) {
+            var currentChar = s.charAt(right);
+            var prevSeenChar = seenChars.get(currentChar);
+            if (prevSeenChar != null && prevSeenChar >= left) {
+                left = prevSeenChar + 1;
+            }
+            seenChars.put(currentChar, right);
+            longest = Math.max(longest, right-left+1);
+        }
+        return longest;
+    }
+
+    public int lengthOfLongestSubstringUsingWhile(String s) {
         int starter = 0;
         int counter = 0;
         int lastStarter = 0;
@@ -32,6 +50,6 @@ public class LongestSubstringWithoutRepeatingChar {
         String b = "pwwkew";
         String emptySpace = "aab";
         LongestSubstringWithoutRepeatingChar longestSubstringWithoutRepeatingChar = new LongestSubstringWithoutRepeatingChar();
-        System.out.println("Result = "+longestSubstringWithoutRepeatingChar.lengthOfLongestSubstringUsingWhile(emptySpace));
+        System.out.println("Result = "+longestSubstringWithoutRepeatingChar.lengthOfLongestSubstringOptimize(emptySpace));
     }
 }
