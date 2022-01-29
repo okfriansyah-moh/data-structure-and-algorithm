@@ -3,16 +3,50 @@ package zero.to.mastery.data_structures.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class HackerRankArraysCase {
 
+    //palindrome using 2pointers from center
+    static boolean isPalindrome2(String str)
+    {
+        str = str.replaceAll("[^A-Za-z0-9]","").toLowerCase().trim();
+        // initialize left/right pointers to point at the middle
+        // index of the string. Remember, indexes start at 0 meaning
+        // that we have to floor() the value from dividing length by 2
+        // in order to get the index of the center.
+        int i = (int) Math.floor(str.length() / 2), j = i;
+        // if the string is even, move left pointer back by 1
+        // so left/right are pointing at the 2 middle values respectively.
+        if (str.length() % 2 == 0) {
+            i--;
+        }
+
+        // loop through the string while expanding pointers
+        // outwards comparing the characters.
+        while (i >= 0 && i <= str.length()-1 && j <= str.length()-1) {
+
+            // If there is a mismatch
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+
+            // Increment first pointer and
+            // decrement the other
+            i++;
+            j--;
+        }
+
+        // Given string is a palindrome
+        return true;
+    }
+
+
     // Function that returns true if
     // str is a palindrome
+    // using 2 pointer technique from outside
     static boolean isPalindrome(String str)
     {
-        str = str.replace("/[^A-Za-z0-9]/g","").toLowerCase(Locale.ROOT);
+        str = str.replaceAll("[^A-Za-z0-9]","").toLowerCase().trim();
         // Pointers pointing to the beginning
         // and the end of the string
         int i = 0, j = str.length() - 1;
