@@ -1,8 +1,12 @@
 package zero.to.mastery.data_structures.arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class IntegerCheckDuplicate {
 
     // O(n^2) approach
+    List<Integer> data = new ArrayList<>();
     public boolean isUnique2(int[] intArray) {
         for (int i = 0; i < intArray.length; i++) {
             for (int j = i+1; j < intArray.length; j++) {

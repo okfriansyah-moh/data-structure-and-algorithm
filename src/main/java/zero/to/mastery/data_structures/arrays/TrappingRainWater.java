@@ -139,5 +139,6 @@ public class TrappingRainWater {
         int[] intArray = {5,0,3,0,0,0,2,3,4,2,1};
         int totalWater = trappingRainWater.trap3(intArray);
         System.out.println(totalWater);
+        System.out.println(Math.floor(2.5));
     }
 }

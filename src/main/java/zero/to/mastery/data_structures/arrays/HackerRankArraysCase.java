@@ -2,6 +2,7 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 
@@ -271,7 +272,9 @@ public class HackerRankArraysCase {
      parameters - arrays - no size limit
      return true or false
      */
+    HashSet<Integer> data = new HashSet<>();
     private boolean containsCommonItem(String[] arr1, String[] arr2) {
+
         for (var i=0; i < arr1.length; i++) {
             for (var j=0; j < arr2.length; j++) {
                 if (arr1[i] == arr2[j]) {
