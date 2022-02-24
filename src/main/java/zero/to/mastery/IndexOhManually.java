@@ -49,8 +49,8 @@ public class IndexOhManually {
 
     public static void main(String[] args) {
         IndexOhManually indexOhManually = new IndexOhManually();
-        String data = "tebet";
-        String target = "";
+        String data = "12345";
+        String target = "2";
         System.out.println(indexOhManually.findIndexOf(data,target));
     }
 }
