@@ -3,10 +3,12 @@ package zero.to.mastery;
 public class IndexOhManually {
 
     public int findIndexOf(String data, String target) {
+        if (!contains(data, target)
+                || target.length() <= 0
+                || data.length() <= 0) return -1;
         int dataLength = data.length();
         char findData = target.charAt(0);
         int counter = 0;
-        if (!contains(data, target)) return -1;
         while (counter < dataLength) {
             if (data.charAt(counter) == findData) {
                 break;
@@ -47,8 +49,8 @@ public class IndexOhManually {
 
     public static void main(String[] args) {
         IndexOhManually indexOhManually = new IndexOhManually();
-        String data = "minum";
-        String target = "minam";
+        String data = "tebet";
+        String target = "";
         System.out.println(indexOhManually.findIndexOf(data,target));
     }
 }
