@@ -1,7 +1,5 @@
 package zero.to.mastery;
 
-import java.util.HashSet;
-
 public class IndexOhManually {
 
     public int findIndexOf(String data, String target) {
@@ -19,18 +17,19 @@ public class IndexOhManually {
     }
 
     public boolean contains(String s1, String s2) {
-        return containsManually2(s1, s2);
+        return containsManually(s1, s2);
     }
 
     private boolean containsManually(String s1, String s2) {
-        if (s1.length() > s2.length())
+        if (s1.length() < s2.length())
             return false;
 
         int count = 0;
 
         //Loop until count matches needle length (indicating match) or until we exhaust haystack
-        for (int j = 0; j < s2.length() && count < s1.length(); ++j) {
-            if (s1.charAt(count) == s2.charAt(j)) {
+        for (int j = 0; j < s1.length() && count < s2.length(); ++j) {
+            System.out.println(count);
+            if (s1.charAt(j) == s2.charAt(count)) {
                 ++count;
             }
             else {
@@ -43,21 +42,13 @@ public class IndexOhManually {
             }
         }
 
-        return (count == s1.length());
-    }
-
-    private boolean containsManually2(String s1, String s2) {
-        HashSet<String> validateData = new HashSet<>();
-        validateData.add(s2);
-        int targetLength = s2.length();
-        int subStringFrom = s1.length() - targetLength;
-        return validateData.contains(s1.substring(subStringFrom));
+        return (count == s2.length());
     }
 
     public static void main(String[] args) {
         IndexOhManually indexOhManually = new IndexOhManually();
         String data = "minum";
-        String target = "um";
+        String target = "minam";
         System.out.println(indexOhManually.findIndexOf(data,target));
     }
 }
