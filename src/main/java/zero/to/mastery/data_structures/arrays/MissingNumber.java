@@ -3,14 +3,13 @@ package zero.to.mastery.data_structures.arrays;
 /**
  * Demonstrates missing number concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class MissingNumber {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -24,8 +23,7 @@ public class MissingNumber {
     /**
      * Executes missing number logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param intArray input value used by the missing number process
      * Output: updates internal state and/or prints computed results to the console.

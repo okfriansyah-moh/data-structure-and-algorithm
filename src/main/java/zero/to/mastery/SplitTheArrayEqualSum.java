@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Demonstrates split the array equal sum concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class SplitTheArrayEqualSum {
 
@@ -18,8 +18,7 @@ public class SplitTheArrayEqualSum {
     /**
      * Executes solve logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param ar input value used by the solve process
      * @return computed string result produced by the solve process
@@ -76,8 +75,7 @@ public class SplitTheArrayEqualSum {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Demonstrates two dimensional array concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class TwoDimensionalArray {
 
@@ -15,8 +15,7 @@ public class TwoDimensionalArray {
     /**
      * Creates a new {@code TwoDimensionalArray} instance for two dimensional array operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param numberOfRows input value used by the two dimensional array process
      * @param numberOfColumns input value used by the two dimensional array process
@@ -35,8 +34,7 @@ public class TwoDimensionalArray {
     /**
      * Executes insert value in the array logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param row input value used by the insert value in the array process
      * @param col input value used by the insert value in the array process
@@ -60,8 +58,7 @@ public class TwoDimensionalArray {
     /**
      * Executes access cell logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param row input value used by the access cell process
      * @param col input value used by the access cell process
@@ -80,8 +77,7 @@ public class TwoDimensionalArray {
     /**
      * Executes traverse2 darray logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -98,8 +94,7 @@ public class TwoDimensionalArray {
     /**
      * Executes searching value logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the searching value process
      * Output: updates internal state and/or prints computed results to the console.
@@ -120,8 +115,7 @@ public class TwoDimensionalArray {
     /**
      * Executes delete value from array logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param row input value used by the delete value from array process
      * @param col input value used by the delete value from array process
@@ -139,8 +133,7 @@ public class TwoDimensionalArray {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

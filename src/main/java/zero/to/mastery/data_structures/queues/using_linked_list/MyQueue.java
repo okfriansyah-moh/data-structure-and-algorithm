@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 /**
  * Demonstrates my queue concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class MyQueue {
 
@@ -16,8 +16,7 @@ public class MyQueue {
   /**
    * Creates a new {@code MyQueue} instance for my queue operations.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * Output: initialized object state that is ready for subsequent method calls.
    */
@@ -30,8 +29,7 @@ public class MyQueue {
   /**
    * Executes peek logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @return computed int result produced by the peek process
    */
@@ -45,8 +43,7 @@ public class MyQueue {
   /**
    * Executes enqueue logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param value input value used by the enqueue process
    * Output: updates internal state and/or prints computed results to the console.
@@ -66,8 +63,7 @@ public class MyQueue {
   /**
    * Executes dequeue logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * Output: updates internal state and/or prints computed results to the console.
    */
@@ -85,8 +81,7 @@ public class MyQueue {
   /**
    * Executes print queue logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * Output: updates internal state and/or prints computed results to the console.
    */
@@ -107,8 +102,7 @@ public class MyQueue {
   /**
    * Executes main logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param args input value used by the main process
    * Output: updates internal state and/or prints computed results to the console.

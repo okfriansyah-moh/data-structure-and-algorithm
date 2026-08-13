@@ -5,14 +5,13 @@ import java.math.BigInteger;
 /**
  * Demonstrates binary to decimal concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BinaryToDecimal {
     /**
      * Executes solution logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param S input value used by the solution process
      * @return computed int result produced by the solution process
@@ -26,8 +25,7 @@ public class BinaryToDecimal {
     /**
      * Executes how much operations to calculate v logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param v input value used by the how much operations to calculate v process
      * @return computed int result produced by the how much operations to calculate v process
@@ -49,8 +47,7 @@ public class BinaryToDecimal {
     /**
      * Executes binary to decimal logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the binary to decimal process
      * @return computed big integer result produced by the binary to decimal process
@@ -71,8 +68,7 @@ public class BinaryToDecimal {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.arrays;
 /**
  * Demonstrates container with most water concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class ContainerWithMostWater {
 
@@ -14,8 +14,7 @@ public class ContainerWithMostWater {
     /**
      * Executes max area optimize logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the max area optimize process
      * @return computed int result produced by the max area optimize process
@@ -40,8 +39,7 @@ public class ContainerWithMostWater {
     /**
      * Executes max area logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the max area process
      * @return computed int result produced by the max area process
@@ -62,8 +60,7 @@ public class ContainerWithMostWater {
     /**
      * Executes max area logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param a input value used by the max area process
      * @param b input value used by the max area process
@@ -83,8 +80,7 @@ public class ContainerWithMostWater {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

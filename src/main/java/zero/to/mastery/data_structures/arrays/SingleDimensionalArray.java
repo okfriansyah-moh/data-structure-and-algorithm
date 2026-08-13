@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.arrays;
 /**
  * Demonstrates single dimensional array concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class SingleDimensionalArray {
     int arr[] = null;
@@ -11,8 +11,7 @@ public class SingleDimensionalArray {
     /**
      * Creates a new {@code SingleDimensionalArray} instance for single dimensional array operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param sizeOfArray input value used by the single dimensional array process
      * Output: initialized object state that is ready for subsequent method calls.
@@ -27,8 +26,7 @@ public class SingleDimensionalArray {
     /**
      * Executes insert logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param location input value used by the insert process
      * @param valueToBeInserted input value used by the insert process
@@ -51,8 +49,7 @@ public class SingleDimensionalArray {
     /**
      * Executes traverse array logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -70,8 +67,7 @@ public class SingleDimensionalArray {
     /**
      * Executes search in array logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param valueToSearch input value used by the search in array process
      * Output: updates internal state and/or prints computed results to the console.
@@ -90,8 +86,7 @@ public class SingleDimensionalArray {
     /**
      * Executes delete value logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param indexToBeDeleted input value used by the delete value process
      * Output: updates internal state and/or prints computed results to the console.
@@ -108,8 +103,7 @@ public class SingleDimensionalArray {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

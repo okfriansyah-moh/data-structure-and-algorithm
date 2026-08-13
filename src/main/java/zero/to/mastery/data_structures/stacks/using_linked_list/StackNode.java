@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.stacks.using_linked_list;
 /**
  * Demonstrates stack node concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class StackNode {
 
@@ -13,8 +13,7 @@ public class StackNode {
   /**
    * Creates a new {@code StackNode} instance for stack node operations.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param value input value used by the stack node process
    * Output: initialized object state that is ready for subsequent method calls.
@@ -27,8 +26,7 @@ public class StackNode {
   /**
    * Creates a new {@code StackNode} instance for stack node operations.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param value input value used by the stack node process
    * @param next input value used by the stack node process
@@ -42,8 +40,7 @@ public class StackNode {
   /**
    * Executes get value logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @return computed int result produced by the get value process
    */
@@ -54,8 +51,7 @@ public class StackNode {
   /**
    * Executes set value logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param value input value used by the set value process
    * Output: updates internal state and/or prints computed results to the console.
@@ -67,8 +63,7 @@ public class StackNode {
   /**
    * Executes get next logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @return computed stack node result produced by the get next process
    */
@@ -79,8 +74,7 @@ public class StackNode {
   /**
    * Executes set next logic.
    *
-   * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-   * steps defined in this class.</p>
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
    *
    * @param next input value used by the set next process
    * Output: updates internal state and/or prints computed results to the console.

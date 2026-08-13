@@ -3,7 +3,7 @@ package zero.to.mastery.algorithms.recursions;
 /**
  * Demonstrates sum of digits concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class SumOfDigits {
     // How to find the sum of digits of a positive integer number using recursion?
@@ -13,8 +13,7 @@ public class SumOfDigits {
     /**
      * Executes sum of digits logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param n input value used by the sum of digits process
      * @return computed int result produced by the sum of digits process
@@ -29,8 +28,7 @@ public class SumOfDigits {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

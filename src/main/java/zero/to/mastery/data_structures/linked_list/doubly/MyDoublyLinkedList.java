@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.linked_list.doubly;
 /**
  * Demonstrates my doubly linked list concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class MyDoublyLinkedList {
     private Node head;
@@ -13,8 +13,7 @@ public class MyDoublyLinkedList {
     /**
      * Creates a new {@code MyDoublyLinkedList} instance for my doubly linked list operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the my doubly linked list process
      * Output: initialized object state that is ready for subsequent method calls.
@@ -28,8 +27,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes prepend logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the prepend process
      * Output: updates internal state and/or prints computed results to the console.
@@ -44,8 +42,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes append logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the append process
      * Output: updates internal state and/or prints computed results to the console.
@@ -60,8 +57,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes print list logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -79,8 +75,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes insert logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the insert process
      * @param value input value used by the insert process
@@ -111,8 +106,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes insert2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the insert2 process
      * @param value input value used by the insert2 process
@@ -142,8 +136,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes remove logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the remove process
      * Output: updates internal state and/or prints computed results to the console.
@@ -166,8 +159,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes remove2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the remove2 process
      * Output: updates internal state and/or prints computed results to the console.
@@ -198,8 +190,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes traverse to index logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the traverse to index process
      * @return computed node result produced by the traverse to index process
@@ -216,8 +207,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes wrap index logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the wrap index process
      * @return computed int result produced by the wrap index process
@@ -229,8 +219,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes get head logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed node result produced by the get head process
      */
@@ -241,8 +230,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes get tail logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed node result produced by the get tail process
      */
@@ -253,8 +241,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes get length logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed int result produced by the get length process
      */
@@ -265,8 +252,7 @@ public class MyDoublyLinkedList {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

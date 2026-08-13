@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.arrays;
 /**
  * Demonstrates trapping rain water concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class TrappingRainWater {
 
@@ -19,8 +19,7 @@ public class TrappingRainWater {
     /**
      * Executes trap3 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the trap3 process
      * @return computed int result produced by the trap3 process
@@ -47,8 +46,7 @@ public class TrappingRainWater {
     /**
      * Executes trap4 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the trap4 process
      * @return computed int result produced by the trap4 process
@@ -82,8 +80,7 @@ public class TrappingRainWater {
     /**
      * Executes trap logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the trap process
      * @return computed int result produced by the trap process
@@ -109,8 +106,7 @@ public class TrappingRainWater {
     /**
      * Executes trap2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the trap2 process
      * @return computed int result produced by the trap2 process
@@ -136,8 +132,7 @@ public class TrappingRainWater {
     /**
      * Executes max right for logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the max right for process
      * @param startingIndex input value used by the max right for process
@@ -157,8 +152,7 @@ public class TrappingRainWater {
     /**
      * Executes max right while logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param rightP input value used by the max right while process
      * @param heigth input value used by the max right while process
@@ -177,8 +171,7 @@ public class TrappingRainWater {
     /**
      * Executes max left for logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param height input value used by the max left for process
      * @param startingIndex input value used by the max left for process
@@ -199,8 +192,7 @@ public class TrappingRainWater {
     /**
      * Executes max left while logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param leftP input value used by the max left while process
      * @param heigth input value used by the max left while process
@@ -218,8 +210,7 @@ public class TrappingRainWater {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

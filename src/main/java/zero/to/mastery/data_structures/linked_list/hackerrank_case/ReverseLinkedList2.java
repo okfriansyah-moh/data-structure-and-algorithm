@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.linked_list.hackerrank_case;
 /**
  * Demonstrates reverse linked list2 concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class ReverseLinkedList2 {
     /*
@@ -27,8 +27,7 @@ public class ReverseLinkedList2 {
     /**
      * Executes reverse between logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param head input value used by the reverse between process
      * @param left input value used by the reverse between process
@@ -66,7 +65,7 @@ public class ReverseLinkedList2 {
 /**
  * Demonstrates list node concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class ListNode {
     int val;

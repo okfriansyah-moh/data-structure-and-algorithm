@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * Demonstrates binary node concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BinaryNode {
     private int value;
@@ -18,8 +18,7 @@ public class BinaryNode {
     /**
      * Creates a new {@code BinaryNode} instance for binary node operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the binary node process
      * Output: initialized object state that is ready for subsequent method calls.

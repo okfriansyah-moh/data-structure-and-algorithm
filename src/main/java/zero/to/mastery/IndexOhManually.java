@@ -3,15 +3,14 @@ package zero.to.mastery;
 /**
  * Demonstrates index oh manually concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class IndexOhManually {
 
     /**
      * Executes find index of logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param data input value used by the find index of process
      * @param target input value used by the find index of process
@@ -36,8 +35,7 @@ public class IndexOhManually {
     /**
      * Executes contains logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s1 input value used by the contains process
      * @param s2 input value used by the contains process
@@ -50,8 +48,7 @@ public class IndexOhManually {
     /**
      * Executes contains manually logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s1 input value used by the contains manually process
      * @param s2 input value used by the contains manually process
@@ -85,8 +82,7 @@ public class IndexOhManually {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

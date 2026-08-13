@@ -6,7 +6,7 @@ import java.util.HashSet;
 /**
  * Demonstrates first recurring character concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class FirstRecurringCharacter {
 
@@ -14,8 +14,7 @@ public class FirstRecurringCharacter {
     /**
      * Executes get first recurring object logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param inputArray input value used by the get first recurring object process
      * @return computed object result produced by the get first recurring object process
@@ -35,8 +34,7 @@ public class FirstRecurringCharacter {
     /**
      * Executes get first recurring object better logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param inputArray input value used by the get first recurring object better process
      * @return computed object result produced by the get first recurring object better process
@@ -57,8 +55,7 @@ public class FirstRecurringCharacter {
     /**
      * Executes first recurring character logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param array input value used by the first recurring character process
      * @return computed integer result produced by the first recurring character process
@@ -79,8 +76,7 @@ public class FirstRecurringCharacter {
     /**
      * Executes get first recurring object better2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param inputArray input value used by the get first recurring object better2 process
      * @return computed object result produced by the get first recurring object better2 process
@@ -98,8 +94,7 @@ public class FirstRecurringCharacter {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

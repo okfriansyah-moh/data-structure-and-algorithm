@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.linked_list;
 /**
  * Demonstrates reverse linked list concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class ReverseLinkedList {
     /**
@@ -48,7 +48,7 @@ public class ReverseLinkedList {
 /**
  * Demonstrates list nodes concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class ListNodes {
     int val;

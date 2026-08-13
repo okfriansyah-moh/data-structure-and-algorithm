@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * Demonstrates my map for hash concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class MyMapForHash {
     private String key;

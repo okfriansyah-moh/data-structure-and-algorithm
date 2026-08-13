@@ -8,14 +8,13 @@ import java.util.List;
 /**
  * Demonstrates almost palindrome concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class AlmostPalindrome {
     /**
      * Executes valid palindrome logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the valid palindrome process
      * @return computed boolean result produced by the valid palindrome process
@@ -38,8 +37,7 @@ public class AlmostPalindrome {
     /**
      * Executes valid sub palindrome logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the valid sub palindrome process
      * @param left input value used by the valid sub palindrome process
@@ -60,8 +58,7 @@ public class AlmostPalindrome {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

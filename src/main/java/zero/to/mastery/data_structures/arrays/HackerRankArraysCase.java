@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * Demonstrates hacker rank arrays case concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class HackerRankArraysCase {
 
@@ -103,8 +103,7 @@ public class HackerRankArraysCase {
     /**
      * Executes convert integ to arra logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -130,8 +129,7 @@ public class HackerRankArraysCase {
     /**
      * Executes hourglass sum logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param arr input value used by the hourglass sum process
      * @return computed int result produced by the hourglass sum process
@@ -160,8 +158,7 @@ public class HackerRankArraysCase {
     /**
      * Executes rotate left logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param d input value used by the rotate left process
      * @param arr input value used by the rotate left process
@@ -201,8 +198,7 @@ public class HackerRankArraysCase {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -222,8 +218,7 @@ public class HackerRankArraysCase {
     /**
      * Executes matching strings logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param strings input value used by the matching strings process
      * @param queries input value used by the matching strings process
@@ -250,8 +245,7 @@ public class HackerRankArraysCase {
     /**
      * Executes matching strings array logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param strings input value used by the matching strings array process
      * @param queries input value used by the matching strings array process
@@ -279,8 +273,7 @@ public class HackerRankArraysCase {
     /**
      * Executes occurences logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param strings input value used by the occurences process
      * @param queries input value used by the occurences process
@@ -321,8 +314,7 @@ public class HackerRankArraysCase {
     /**
      * Executes java case hr logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -355,8 +347,7 @@ public class HackerRankArraysCase {
     /**
      * Executes contains common item logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param arr1 input value used by the contains common item process
      * @param arr2 input value used by the contains common item process

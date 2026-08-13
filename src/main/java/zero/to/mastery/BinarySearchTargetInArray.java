@@ -7,14 +7,13 @@ import java.util.stream.Collectors;
 /**
  * Demonstrates binary search target in array concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BinarySearchTargetInArray {
     /**
      * Executes search target logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param ListIntegerarray input value used by the search target process
      * @param target input value used by the search target process
@@ -40,8 +39,7 @@ public class BinarySearchTargetInArray {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

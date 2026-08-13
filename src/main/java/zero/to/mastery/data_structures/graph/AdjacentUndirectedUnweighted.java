@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Demonstrates adjacent undirected unweighted concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class AdjacentUndirectedUnweighted {
     private HashMap<Integer, List<Integer>> adjacentList;
@@ -17,8 +17,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Creates a new {@code AdjacentUndirectedUnweighted} instance for adjacent undirected unweighted operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: initialized object state that is ready for subsequent method calls.
      */
@@ -30,8 +29,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes add node logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the add node process
      * Output: updates internal state and/or prints computed results to the console.
@@ -44,8 +42,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes add edge logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value1 input value used by the add edge process
      * @param value2 input value used by the add edge process
@@ -60,8 +57,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes show connections logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -80,8 +76,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes get number of nodes logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed int result produced by the get number of nodes process
      */
@@ -92,8 +87,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -132,8 +126,7 @@ public class AdjacentUndirectedUnweighted {
     /**
      * Executes another time logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */

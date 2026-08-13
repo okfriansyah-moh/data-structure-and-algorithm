@@ -30,8 +30,7 @@ public class FormulatrixApi {
     /**
      * Executes get json data logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed string result produced by the get json data process
      */
@@ -63,8 +62,7 @@ public class FormulatrixApi {
     /**
      * Executes get xml data logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed string result produced by the get xml data process
      */
@@ -106,8 +104,7 @@ public class FormulatrixApi {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -149,8 +146,7 @@ public class FormulatrixApi {
     /**
      * Executes register logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param itemName input value used by the register process
      * @param itemContent input value used by the register process
@@ -176,8 +172,7 @@ public class FormulatrixApi {
     /**
      * Executes validate item type logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param itemContent input value used by the validate item type process
      * @param itemType input value used by the validate item type process
@@ -199,8 +194,7 @@ public class FormulatrixApi {
     /**
      * Executes check data is present logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param itemName input value used by the check data is present process
      * @return computed boolean result produced by the check data is present process
@@ -215,8 +209,7 @@ public class FormulatrixApi {
     /**
      * Executes save data logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the save data process
      * @param value input value used by the save data process
@@ -234,8 +227,7 @@ public class FormulatrixApi {
     /**
      * Executes retrieve logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param itemName input value used by the retrieve process
      * @return computed string result produced by the retrieve process
@@ -258,8 +250,7 @@ public class FormulatrixApi {
     /**
      * Executes get type logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param itemName input value used by the get type process
      * @return computed int result produced by the get type process
@@ -276,8 +267,12 @@ public class FormulatrixApi {
     }
 
     /**
-     *  Remove an item from the repository.
-     * @param itemName
+     * Executes de register logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param itemName input value used by the de register process
+     * Output: updates internal state and/or prints computed results to the console.
      */
     public void deRegister(String itemName) {
         if (!checkDataIsPresent(itemName)) {

@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This is just an example on how you could write a HashTable as it was shown on the course,
- * this is not how it's implemented in Java, please refer to {@link java.util.HashMap}
+ * Demonstrates my hash table concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class MyHashTable {
 
@@ -19,8 +20,7 @@ public class MyHashTable {
     /**
      * Creates a new {@code MyHashTable} instance for my hash table operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param size input value used by the my hash table process
      * Output: initialized object state that is ready for subsequent method calls.
@@ -33,8 +33,7 @@ public class MyHashTable {
     /**
      * Executes set logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the set process
      * @param value input value used by the set process
@@ -50,8 +49,7 @@ public class MyHashTable {
     /**
      * Executes get logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the get process
      * @return computed int result produced by the get process
@@ -71,8 +69,7 @@ public class MyHashTable {
     /**
      * Executes keys logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed list<string> result produced by the keys process
      */
@@ -91,8 +88,7 @@ public class MyHashTable {
     /**
      * Executes hash logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the hash process
      * @return computed int result produced by the hash process
@@ -108,8 +104,7 @@ public class MyHashTable {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

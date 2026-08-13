@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Demonstrates arrays stack concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class ArraysStack {
     private List<Integer> array = new ArrayList<>();
@@ -15,8 +15,7 @@ public class ArraysStack {
     /**
      * Creates a new {@code ArraysStack} instance for arrays stack operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: initialized object state that is ready for subsequent method calls.
      */
@@ -26,8 +25,7 @@ public class ArraysStack {
     /**
      * Executes peak logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed int result produced by the peak process
      */
@@ -41,8 +39,7 @@ public class ArraysStack {
     /**
      * Executes pop logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed int result produced by the pop process
      */
@@ -56,8 +53,7 @@ public class ArraysStack {
     /**
      * Executes push logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param valueToPush input value used by the push process
      * Output: updates internal state and/or prints computed results to the console.
@@ -69,8 +65,7 @@ public class ArraysStack {
     /**
      * Executes print stack logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -83,8 +78,7 @@ public class ArraysStack {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

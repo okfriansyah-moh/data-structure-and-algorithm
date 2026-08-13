@@ -3,7 +3,7 @@ package zero.to.mastery.algorithms.recursions;
 /**
  * Demonstrates decimal to binary concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class DecimalToBinary {
     // rumus decimal to binary
@@ -11,8 +11,7 @@ public class DecimalToBinary {
     /**
      * Executes decimal to binary logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param n input value used by the decimal to binary process
      * @return computed int result produced by the decimal to binary process
@@ -27,8 +26,7 @@ public class DecimalToBinary {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

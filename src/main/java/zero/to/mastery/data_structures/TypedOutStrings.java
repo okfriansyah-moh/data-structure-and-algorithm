@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Demonstrates typed out strings concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class TypedOutStrings {
 
@@ -14,8 +14,7 @@ public class TypedOutStrings {
     /**
      * Executes backspace compare2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the backspace compare2 process
      * @param t input value used by the backspace compare2 process
@@ -32,8 +31,7 @@ public class TypedOutStrings {
     /**
      * Executes pointer while logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param p input value used by the pointer while process
      * @param data input value used by the pointer while process
@@ -62,8 +60,7 @@ public class TypedOutStrings {
     /**
      * Executes backspace compare logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the backspace compare process
      * @param t input value used by the backspace compare process
@@ -89,8 +86,7 @@ public class TypedOutStrings {
     /**
      * Executes build string logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param s input value used by the build string process
      * @return computed list<string> result produced by the build string process
@@ -115,8 +111,7 @@ public class TypedOutStrings {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

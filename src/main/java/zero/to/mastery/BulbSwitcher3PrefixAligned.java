@@ -3,14 +3,13 @@ package zero.to.mastery;
 /**
  * Demonstrates bulb switcher3 prefix aligned concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BulbSwitcher3PrefixAligned {
     /**
      * Executes num times all blue logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param flips input value used by the num times all blue process
      * @return computed int result produced by the num times all blue process
@@ -42,8 +41,7 @@ public class BulbSwitcher3PrefixAligned {
     /**
      * Executes check logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param binary input value used by the check process
      * @param index input value used by the check process
@@ -69,8 +67,7 @@ public class BulbSwitcher3PrefixAligned {
     /**
      * Executes num times all blue2 logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param flips input value used by the num times all blue2 process
      * @return computed int result produced by the num times all blue2 process
@@ -90,8 +87,7 @@ public class BulbSwitcher3PrefixAligned {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

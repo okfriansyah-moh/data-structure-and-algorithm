@@ -7,14 +7,13 @@ import java.util.List;
 /**
  * Demonstrates selection sort concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class SelectionSort {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -41,8 +40,7 @@ public class SelectionSort {
     /**
      * Executes selection sort logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param data input value used by the selection sort process
      * @return computed list<integer> result produced by the selection sort process
@@ -70,8 +68,7 @@ public class SelectionSort {
     /**
      * Executes selection sort logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param array input value used by the selection sort process
      * @return computed integer[] result produced by the selection sort process

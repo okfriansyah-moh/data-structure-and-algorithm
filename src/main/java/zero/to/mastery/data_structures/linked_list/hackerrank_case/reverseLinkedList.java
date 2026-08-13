@@ -9,14 +9,13 @@ import java.util.stream.IntStream;
 /**
  * Demonstrates reverse linked list concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class reverseLinkedList {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -55,7 +54,7 @@ public class reverseLinkedList {
 /**
  * Demonstrates singly linked list node concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class SinglyLinkedListNode {
     public int data;
@@ -64,8 +63,7 @@ class SinglyLinkedListNode {
     /**
      * Creates a new {@code SinglyLinkedListNode} instance for singly linked list node operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param nodeData input value used by the singly linked list node process
      * Output: initialized object state that is ready for subsequent method calls.
@@ -79,7 +77,7 @@ class SinglyLinkedListNode {
 /**
  * Demonstrates singly linked list concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class SinglyLinkedList {
     public SinglyLinkedListNode head;
@@ -88,8 +86,7 @@ class SinglyLinkedList {
     /**
      * Creates a new {@code SinglyLinkedList} instance for singly linked list operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: initialized object state that is ready for subsequent method calls.
      */
@@ -101,8 +98,7 @@ class SinglyLinkedList {
     /**
      * Executes insert node logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param nodeData input value used by the insert node process
      * Output: updates internal state and/or prints computed results to the console.
@@ -123,14 +119,13 @@ class SinglyLinkedList {
 /**
  * Demonstrates singly linked list print helper concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class SinglyLinkedListPrintHelper {
     /**
      * Executes print list logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param node input value used by the print list process
      * @param sep input value used by the print list process
@@ -153,7 +148,7 @@ class SinglyLinkedListPrintHelper {
 /**
  * Demonstrates result concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 class Result {
 
@@ -177,8 +172,7 @@ class Result {
     /**
      * Executes reverse logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param llist input value used by the reverse process
      * @return computed singly linked list node result produced by the reverse process

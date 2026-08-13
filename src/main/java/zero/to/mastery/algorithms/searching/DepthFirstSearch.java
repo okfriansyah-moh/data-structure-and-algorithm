@@ -6,13 +6,13 @@ import java.util.List;
 /**
  * Demonstrates depth first search concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class DepthFirstSearch {
     /**
      * Demonstrates search type concepts for data-structure and algorithm practice.
      *
-     * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+     * <p>Use this class as a quick reference for the core algorithm flow.</p>
      */
     enum SearchType {
         IN_ORDER,
@@ -38,8 +38,7 @@ public class DepthFirstSearch {
     /**
      * Executes insert logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the insert process
      * Output: updates internal state and/or prints computed results to the console.
@@ -73,8 +72,7 @@ public class DepthFirstSearch {
     /**
      * Executes lookup logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the lookup process
      * @return computed search node result produced by the lookup process
@@ -99,8 +97,7 @@ public class DepthFirstSearch {
     /**
      * Executes remove logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the remove process
      * Output: updates internal state and/or prints computed results to the console.
@@ -153,8 +150,7 @@ public class DepthFirstSearch {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -166,8 +162,7 @@ public class DepthFirstSearch {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param node input value used by the print tree process
      * Output: updates internal state and/or prints computed results to the console.
@@ -191,8 +186,7 @@ public class DepthFirstSearch {
     /**
      * Executes depth first search in oder logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param searchType input value used by the depth first search in oder process
      * @return computed list<integer> result produced by the depth first search in oder process
@@ -208,8 +202,7 @@ public class DepthFirstSearch {
     /**
      * Executes depth first search in oder logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param node input value used by the depth first search in oder process
      * @param list input value used by the depth first search in oder process
@@ -241,8 +234,7 @@ public class DepthFirstSearch {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

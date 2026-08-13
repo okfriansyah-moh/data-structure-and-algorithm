@@ -3,7 +3,7 @@ package zero.to.mastery.data_structures.trees;
 /**
  * Demonstrates binary search tree concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BinarySearchTree {
 
@@ -12,8 +12,7 @@ public class BinarySearchTree {
     /**
      * Creates a new {@code BinarySearchTree} instance for binary search tree operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: initialized object state that is ready for subsequent method calls.
      */
@@ -24,8 +23,7 @@ public class BinarySearchTree {
     /**
      * Executes is valid bst logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param root input value used by the is valid bst process
      * @param left input value used by the is valid bst process
@@ -57,8 +55,7 @@ public class BinarySearchTree {
     /**
      * Executes insert logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the insert process
      * Output: updates internal state and/or prints computed results to the console.
@@ -92,8 +89,7 @@ public class BinarySearchTree {
     /**
      * Executes lookup logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the lookup process
      * @return computed binary node result produced by the lookup process
@@ -118,8 +114,7 @@ public class BinarySearchTree {
     /**
      * Executes remove logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the remove process
      * Output: updates internal state and/or prints computed results to the console.
@@ -172,8 +167,7 @@ public class BinarySearchTree {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -185,8 +179,7 @@ public class BinarySearchTree {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param node input value used by the print tree process
      * Output: updates internal state and/or prints computed results to the console.
@@ -209,8 +202,7 @@ public class BinarySearchTree {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.

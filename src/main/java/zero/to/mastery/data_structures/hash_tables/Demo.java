@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Demonstrates demo concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class Demo {
     public HashMap<String, HashMap<String, String>> dataSet = new HashMap<>();
@@ -17,8 +17,7 @@ public class Demo {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
@@ -45,8 +44,7 @@ public class Demo {
     /**
      * Executes register data logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the register data process
      * @param attributes input value used by the register data process
@@ -63,8 +61,7 @@ public class Demo {
     /**
      * Executes register index logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param attributeValue input value used by the register index process
      * @param key input value used by the register index process
@@ -80,8 +77,7 @@ public class Demo {
     /**
      * Executes find by index and value logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param index input value used by the find by index and value process
      * @param value input value used by the find by index and value process
@@ -94,8 +90,7 @@ public class Demo {
     /**
      * Executes delete key logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param key input value used by the delete key process
      * Output: updates internal state and/or prints computed results to the console.

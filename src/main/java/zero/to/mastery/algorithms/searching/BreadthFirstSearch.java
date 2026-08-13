@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * Demonstrates breadth first search concepts for data-structure and algorithm practice.
  *
- * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
  */
 public class BreadthFirstSearch {
 
@@ -17,8 +17,7 @@ public class BreadthFirstSearch {
     /**
      * Creates a new {@code BreadthFirstSearch} instance for breadth first search operations.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: initialized object state that is ready for subsequent method calls.
      */
@@ -30,8 +29,7 @@ public class BreadthFirstSearch {
     /**
      * Executes insert logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the insert process
      * Output: updates internal state and/or prints computed results to the console.
@@ -65,8 +63,7 @@ public class BreadthFirstSearch {
     /**
      * Executes lookup logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the lookup process
      * @return computed search node result produced by the lookup process
@@ -91,8 +88,7 @@ public class BreadthFirstSearch {
     /**
      * Executes remove logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param value input value used by the remove process
      * Output: updates internal state and/or prints computed results to the console.
@@ -145,8 +141,7 @@ public class BreadthFirstSearch {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * Output: updates internal state and/or prints computed results to the console.
      */
@@ -158,8 +153,7 @@ public class BreadthFirstSearch {
     /**
      * Executes print tree logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param node input value used by the print tree process
      * Output: updates internal state and/or prints computed results to the console.
@@ -183,8 +177,7 @@ public class BreadthFirstSearch {
     /**
      * Executes breadth first search iteratively logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed list<integer> result produced by the breadth first search iteratively process
      */
@@ -216,8 +209,7 @@ public class BreadthFirstSearch {
     /**
      * Executes breadth first search recursively logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @return computed list<integer> result produced by the breadth first search recursively process
      */
@@ -230,8 +222,7 @@ public class BreadthFirstSearch {
     /**
      * Executes breadth first search recursively logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param queue input value used by the breadth first search recursively process
      * @param list input value used by the breadth first search recursively process
@@ -256,8 +247,7 @@ public class BreadthFirstSearch {
     /**
      * Executes main logic.
      *
-     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
-     * steps defined in this class.</p>
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
      *
      * @param args input value used by the main process
      * Output: updates internal state and/or prints computed results to the console.
