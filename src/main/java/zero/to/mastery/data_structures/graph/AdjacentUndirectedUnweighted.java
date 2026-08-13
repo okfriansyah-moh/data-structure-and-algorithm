@@ -6,25 +6,65 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Demonstrates adjacent undirected unweighted concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class AdjacentUndirectedUnweighted {
     private HashMap<Integer, List<Integer>> adjacentList;
     private int numberOfNodes;
+    /**
+     * Creates a new {@code AdjacentUndirectedUnweighted} instance for adjacent undirected unweighted operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public AdjacentUndirectedUnweighted() {
         adjacentList = new HashMap<>();
         numberOfNodes = 0;
     }
 
+    /**
+     * Executes add node logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the add node process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void addNode(int value) {
         adjacentList.put(value, new ArrayList<>());
         numberOfNodes++;
     }
 
+    /**
+     * Executes add edge logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value1 input value used by the add edge process
+     * @param value2 input value used by the add edge process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void addEdge(int value1, int value2) {
         // undirected graph
         adjacentList.get(value1).add(value2);
         adjacentList.get(value2).add(value1);
     }
 
+    /**
+     * Executes show connections logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void showConnections() {
         Set<Integer> keys = adjacentList.keySet();
         for (int node : keys) {
@@ -37,10 +77,27 @@ public class AdjacentUndirectedUnweighted {
         }
     }
 
+    /**
+     * Executes get number of nodes logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed int result produced by the get number of nodes process
+     */
     public int getNumberOfNodes() {
         return numberOfNodes;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         AdjacentUndirectedUnweighted graph = new AdjacentUndirectedUnweighted();
         graph.addNode(0);
@@ -72,6 +129,14 @@ public class AdjacentUndirectedUnweighted {
 //        }
     }
 
+    /**
+     * Executes another time logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private static void anotherTime() throws Exception{
         for (int j = 0; j <=1000; j++){
             Thread.sleep(1000);

@@ -3,12 +3,26 @@ package zero.to.mastery.algorithms.recursions;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates fibonacci concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class Fibonacci {
     /*
     Fibonacci itu penjumlahan dari index sebelumnya
     Misal 0,1,1,2,3,5,8,13,21,34,55,144 ....
     patternnya each value is the sum of 2 previous values
     dan kalau n nya kurang dari 2 selalu return n
+     */
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
      */
     public static void main(String[] args) {
         System.out.println("Fibonacci Recursive dari 10 = " + fibonacciRecursive(10));
@@ -17,6 +31,15 @@ public class Fibonacci {
     }
 
     // Recursive fibonacci big O(2^n), karena dipanggil 2 kali recursionnya.
+    /**
+     * Executes fibonacci recursive logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param n input value used by the fibonacci recursive process
+     * @return computed int result produced by the fibonacci recursive process
+     */
     private static int fibonacciRecursive(int n) {
         if (n < 2) {
             return n;
@@ -24,6 +47,15 @@ public class Fibonacci {
         return fibonacciRecursive(n-1) + fibonacciRecursive(n-2);
     }
 
+    /**
+     * Executes fibonaccti iterative logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param n input value used by the fibonaccti iterative process
+     * @return computed int result produced by the fibonaccti iterative process
+     */
     private static int fibonacctiIterative(int n) {
         List<Integer> arr = new ArrayList<>();
         arr.add(0);

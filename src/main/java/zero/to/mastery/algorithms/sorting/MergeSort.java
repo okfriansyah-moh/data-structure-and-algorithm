@@ -4,12 +4,35 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Demonstrates merge sort concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class MergeSort {
 
+    /**
+     * Executes merge sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the merge sort process
+     * @return computed integer[] result produced by the merge sort process
+     */
     public static Integer[] mergeSort(Integer[] array) {
         return mergeSort(new ArrayList<>(Arrays.asList(array))).toArray(new Integer[0]);
     }
 
+    /**
+     * Executes merge sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the merge sort process
+     * @return computed list<integer> result produced by the merge sort process
+     */
     public static List<Integer> mergeSort(List<Integer> array) {
         if (array.size() == 1) {
             return array;
@@ -22,6 +45,16 @@ public class MergeSort {
         return merge(mergeSort(left), mergeSort(right));
     }
 
+    /**
+     * Executes merge logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param left input value used by the merge process
+     * @param right input value used by the merge process
+     * @return computed list<integer> result produced by the merge process
+     */
     public static List<Integer> merge(List<Integer> left, List<Integer> right) {
         List<Integer> merged = new ArrayList<>();
         int leftIndex = 0;
@@ -41,6 +74,15 @@ public class MergeSort {
         return merged;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         Integer[] array = {1, 8, 54, 9, 65, 1, 100, 0, 45, 50, 0, 90, 30, 46};
         Arrays.stream(mergeSort(array)).forEach(System.out::println);

@@ -3,6 +3,11 @@ package zero.to.mastery.data_structures.arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/**
+ * Demonstrates two pair sum concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class TwoPairSum {
 
     // Given an array of integers, return the
@@ -10,6 +15,16 @@ public class TwoPairSum {
     // a given target
 
     // Two sum method 1 O(n2)
+    /**
+     * Executes two sum logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param nums input value used by the two sum process
+     * @param target input value used by the two sum process
+     * @return computed int[] result produced by the two sum process
+     */
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i+1; j < nums.length; j++) {
@@ -22,6 +37,16 @@ public class TwoPairSum {
     }
 
     // method 2 O(n)
+    /**
+     * Executes two sum2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param nums input value used by the two sum2 process
+     * @param target input value used by the two sum2 process
+     * @return computed int[] result produced by the two sum2 process
+     */
     public int[] twoSum2(int[] nums, int target) {
         // TODO
         int temp = 0;
@@ -40,6 +65,16 @@ public class TwoPairSum {
     }
 
     // method 3 using hashmap O(n) , space complex = O(n)
+    /**
+     * Executes two sum3 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param nums input value used by the two sum3 process
+     * @param target input value used by the two sum3 process
+     * @return computed int[] result produced by the two sum3 process
+     */
     public int[] twoSum3(int[] nums, int target) {
         HashMap<Integer, Integer> numsMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -59,6 +94,15 @@ public class TwoPairSum {
         return null;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         int[] intArray = {2,7,10,15,11};
         TwoPairSum twoPairSum = new TwoPairSum();

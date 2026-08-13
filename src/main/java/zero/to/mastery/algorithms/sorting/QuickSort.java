@@ -3,8 +3,24 @@ package zero.to.mastery.algorithms.sorting;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/**
+ * Demonstrates quick sort concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class QuickSort {
 
+    /**
+     * Executes quick sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the quick sort process
+     * @param left input value used by the quick sort process
+     * @param right input value used by the quick sort process
+     * @return computed integer[] result produced by the quick sort process
+     */
     public static Integer[] quickSort(Integer[] array, int left, int right){
         int pivot;
         int partitionIndex;
@@ -22,6 +38,18 @@ public class QuickSort {
         return array;
     }
 
+    /**
+     * Executes partition logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the partition process
+     * @param pivot input value used by the partition process
+     * @param left input value used by the partition process
+     * @param right input value used by the partition process
+     * @return computed int result produced by the partition process
+     */
     public static int partition(Integer[] array, int pivot, int left, int right){
         int pivotValue = array[pivot];
         int partitionIndex = left;
@@ -36,6 +64,17 @@ public class QuickSort {
         return partitionIndex;
     }
 
+    /**
+     * Executes swap logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the swap process
+     * @param index1 input value used by the swap process
+     * @param index2 input value used by the swap process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private static void swap(Integer[] array, int index1, int index2) {
         int temp = array[index1];
         array[index1] = array[index2];
@@ -44,6 +83,17 @@ public class QuickSort {
 
     /*
     Quick sort methodde 2
+     */
+    /**
+     * Executes in-place quick sort on a primitive integer array.
+     *
+     * <p>Explanation: partitions the current range around a pivot, then recursively sorts
+     * the left and right partitions until each segment has fewer than two elements.</p>
+     *
+     * @param arr input array to be sorted
+     * @param low starting index of the current partition
+     * @param high ending index of the current partition
+     * Output: the same input array is reordered into ascending order.
      */
     void quickSort(int[] arr, int low, int high) {
         if (low < high) {
@@ -54,6 +104,17 @@ public class QuickSort {
         }
     }
 
+    /**
+     * Partitions a primitive integer array around the last element as pivot.
+     *
+     * <p>Explanation: values less than or equal to the pivot are moved to the left side,
+     * then the pivot is placed in its final sorted location.</p>
+     *
+     * @param arr array being partitioned
+     * @param low starting index of the partition range
+     * @param high ending index of the partition range (pivot location)
+     * @return pivot index after partitioning
+     */
     int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = (low - 1);
@@ -78,11 +139,29 @@ public class QuickSort {
 
 
     /* print array */
+    /**
+     * Prints all elements of an integer array in one line.
+     *
+     * <p>Explanation: iterates through the array and writes each value to standard output
+     * for quick inspection of the sorting result.</p>
+     *
+     * @param arr array to display
+     * Output: console text that represents the array order.
+     */
     static void printArray(int[] arr) {
         for (int value : arr) System.out.print(value + " ");
         System.out.println();
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         Integer[] array = {1, 9, 54, 8, 65, 1, 100, 0, 45, 50, 0, 90, 30, 46};
         System.out.println(Arrays.asList(quickSort(array, 0 , array.length - 1)));

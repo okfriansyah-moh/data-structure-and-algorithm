@@ -4,7 +4,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Demonstrates selection sort concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class SelectionSort {
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(99);
@@ -24,6 +38,15 @@ public class SelectionSort {
     }
 
     // using list
+    /**
+     * Executes selection sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param data input value used by the selection sort process
+     * @return computed list<integer> result produced by the selection sort process
+     */
     private static List<Integer> selectionSort(List<Integer> data) {
         int arrayLength = data.size();
         int temporal;
@@ -44,6 +67,15 @@ public class SelectionSort {
     }
 
     // using array
+    /**
+     * Executes selection sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the selection sort process
+     * @return computed integer[] result produced by the selection sort process
+     */
     public static Integer[] selectionSort(Integer[] array) {
         for (int i = 0; i < array.length; i++) {
             int minValue = array[i];

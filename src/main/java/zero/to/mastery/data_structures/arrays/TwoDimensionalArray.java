@@ -2,11 +2,26 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.Arrays;
 
+/**
+ * Demonstrates two dimensional array concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class TwoDimensionalArray {
 
     int arr[][] = null;
 
     //Constructor
+    /**
+     * Creates a new {@code TwoDimensionalArray} instance for two dimensional array operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param numberOfRows input value used by the two dimensional array process
+     * @param numberOfColumns input value used by the two dimensional array process
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public TwoDimensionalArray(int numberOfRows, int numberOfColumns) {
         this.arr = new int[numberOfRows][numberOfColumns];
         for (int row = 0; row < arr.length; row++) {
@@ -17,6 +32,17 @@ public class TwoDimensionalArray {
     }
 
     // inserting value in the array
+    /**
+     * Executes insert value in the array logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param row input value used by the insert value in the array process
+     * @param col input value used by the insert value in the array process
+     * @param value input value used by the insert value in the array process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void insertValueInTheArray(int row, int col, int value) {
         try {
             if (arr[row][col] == Integer.MIN_VALUE) {
@@ -31,6 +57,16 @@ public class TwoDimensionalArray {
     }
 
     // Accessing cell value from given array
+    /**
+     * Executes access cell logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param row input value used by the access cell process
+     * @param col input value used by the access cell process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void accessCell(int row, int col) {
         System.out.println("Accessing Row " + row + " , Col " + col);
         try {
@@ -41,6 +77,14 @@ public class TwoDimensionalArray {
     }
 
     // Traverse 2D Array
+    /**
+     * Executes traverse2 darray logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void traverse2DArray() {
         for (int row=0; row < arr.length; row++) { // O(mn)
             for (int col = 0; col < arr[0].length; col++) {
@@ -51,6 +95,15 @@ public class TwoDimensionalArray {
     }
 
     // Searching a single value from the array
+    /**
+     * Executes searching value logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the searching value process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void searchingValue(int value) {
         for (int row=0; row < arr.length; row++) { // O(mn)
             for (int col=0; col < arr[0].length; col++) {
@@ -64,6 +117,16 @@ public class TwoDimensionalArray {
     }
 
     // Deleting value from array
+    /**
+     * Executes delete value from array logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param row input value used by the delete value from array process
+     * @param col input value used by the delete value from array process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void deleteValueFromArray(int row, int col) {
         try {
             System.out.println("Successfully Deleted : " + arr[row][col]);
@@ -73,6 +136,15 @@ public class TwoDimensionalArray {
         }
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         int[][] int2DArray = new int[2][2];
         int2DArray[0][0] = 1;

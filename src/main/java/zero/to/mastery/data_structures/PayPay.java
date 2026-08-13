@@ -7,6 +7,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Demonstrates pay pay concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class PayPay {
 
     static int[] numbers = {0,1,2,3,4,5,6,7,8,9};
@@ -115,6 +120,15 @@ public class PayPay {
 //    }
 
 
+    /**
+     * Executes solution logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param a input value used by the solution process
+     * @return computed int[] result produced by the solution process
+     */
     public static int[] solution(int[] a) {
         Map<Integer, Integer> mp
                 = new HashMap<Integer, Integer>();
@@ -162,6 +176,15 @@ public class PayPay {
         return result;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         int[] a = {25,2,3,57,38,41};
         System.out.println(solution(a));

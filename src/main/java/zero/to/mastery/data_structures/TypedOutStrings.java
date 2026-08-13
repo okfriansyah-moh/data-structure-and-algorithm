@@ -3,9 +3,24 @@ package zero.to.mastery.data_structures;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates typed out strings concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class TypedOutStrings {
 
     // using two pointer technique
+    /**
+     * Executes backspace compare2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param s input value used by the backspace compare2 process
+     * @param t input value used by the backspace compare2 process
+     * @return computed boolean result produced by the backspace compare2 process
+     */
     public boolean backspaceCompare2(String s, String t) {
         int p1 = s.length() - 1, p2 = t.length() - 1;
         String resultP1 = pointerWhile(p1, s);
@@ -14,6 +29,16 @@ public class TypedOutStrings {
         return resultP1.equals(resultP2);
     }
 
+    /**
+     * Executes pointer while logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param p input value used by the pointer while process
+     * @param data input value used by the pointer while process
+     * @return computed string result produced by the pointer while process
+     */
     private String pointerWhile(int p, String data) {
         String result = "";
         while (p >= 0) {
@@ -34,6 +59,16 @@ public class TypedOutStrings {
         return result;
     }
 
+    /**
+     * Executes backspace compare logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param s input value used by the backspace compare process
+     * @param t input value used by the backspace compare process
+     * @return computed boolean result produced by the backspace compare process
+     */
     public boolean backspaceCompare(String s, String t) {
         List<String> finalS = buildString(s);
         List<String> finalT = buildString(t);
@@ -51,6 +86,15 @@ public class TypedOutStrings {
         return true;
     }
 
+    /**
+     * Executes build string logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param s input value used by the build string process
+     * @return computed list<string> result produced by the build string process
+     */
     private List<String> buildString(String s) {
         List<String> builtArray = new ArrayList<>();
         for (int i = 0; i < s.length(); i++) {
@@ -68,6 +112,15 @@ public class TypedOutStrings {
         return builtArray;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         TypedOutStrings typedOutStrings = new TypedOutStrings();
         String c =  "ab#c";

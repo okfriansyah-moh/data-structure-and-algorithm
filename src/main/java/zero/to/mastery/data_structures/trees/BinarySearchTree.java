@@ -1,13 +1,37 @@
 package zero.to.mastery.data_structures.trees;
 
+/**
+ * Demonstrates binary search tree concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class BinarySearchTree {
 
     private BinaryNode node;
 
+    /**
+     * Creates a new {@code BinarySearchTree} instance for binary search tree operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public BinarySearchTree() {
         node = null;
     }
 
+    /**
+     * Executes is valid bst logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param root input value used by the is valid bst process
+     * @param left input value used by the is valid bst process
+     * @param right input value used by the is valid bst process
+     * @return computed boolean result produced by the is valid bst process
+     */
     private static boolean isValidBST(BinaryNode root, BinaryNode left, BinaryNode right) {
         if (root == null) return true;
 
@@ -30,6 +54,15 @@ public class BinarySearchTree {
     }
 
     // insert process in video
+    /**
+     * Executes insert logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the insert process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void insert(int value) {
         BinaryNode newNode = new BinaryNode(value);
         if (this.node == null) {
@@ -56,6 +89,15 @@ public class BinarySearchTree {
         }
     }
 
+    /**
+     * Executes lookup logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the lookup process
+     * @return computed binary node result produced by the lookup process
+     */
     public BinaryNode lookup(int value) {
         if (this.node == null) {
             return null;
@@ -73,6 +115,15 @@ public class BinarySearchTree {
         return null;
     }
 
+    /**
+     * Executes remove logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the remove process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void remove(int value) {
         if (node == null) {
             return;
@@ -118,11 +169,28 @@ public class BinarySearchTree {
     }
 
     int count = 0;
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void printTree() {
         count = 0;
         printTree(node);
     }
 
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param node input value used by the print tree process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void printTree(BinaryNode node) {
         System.out.print(node.getValue());
         System.out.println();
@@ -138,6 +206,15 @@ public class BinarySearchTree {
         count--;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         binarySearchTree.insert(9);

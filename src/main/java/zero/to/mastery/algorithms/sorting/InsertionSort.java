@@ -5,7 +5,21 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Demonstrates insertion sort concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class InsertionSort {
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(99);
@@ -25,6 +39,15 @@ public class InsertionSort {
     }
 
     // using list cara 1
+    /**
+     * Executes insertion sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param data input value used by the insertion sort process
+     * @return computed list<integer> result produced by the insertion sort process
+     */
     private static List<Integer> InsertionSort(List<Integer> data) {
         int arrayLength = data.size();
         for (int i = 0; i < arrayLength; i++) {
@@ -48,6 +71,15 @@ public class InsertionSort {
     }
 
     // using array cara 2
+    /**
+     * Executes insertion sort2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the insertion sort2 process
+     * @return computed integer[] result produced by the insertion sort2 process
+     */
     public static Integer[] insertionSort2(Integer[] array) {
         List<Integer> list = new LinkedList<>(Arrays.asList(array)); //Using linked list so shifting will be efficient
         for (int i = 1; i < list.size(); i++) { //Fixed: i start at i = 1

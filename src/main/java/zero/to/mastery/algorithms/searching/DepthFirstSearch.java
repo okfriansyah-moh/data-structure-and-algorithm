@@ -3,7 +3,17 @@ package zero.to.mastery.algorithms.searching;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates depth first search concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class DepthFirstSearch {
+    /**
+     * Demonstrates search type concepts for data-structure and algorithm practice.
+     *
+     * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+     */
     enum SearchType {
         IN_ORDER,
         PRE_ORDER,
@@ -12,11 +22,28 @@ public class DepthFirstSearch {
 
     private SearchNode node;
 
+    /**
+     * Creates a new {@code DepthFirstSearch} instance for depth first search operations.
+     *
+     * <p>Explanation: initializes an empty binary-search-tree container that can be populated
+     * and traversed with DFS variants.</p>
+     *
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public DepthFirstSearch() {
         node = null;
     }
 
     // insert process in video
+    /**
+     * Executes insert logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the insert process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void insert(int value) {
         SearchNode newNode = new SearchNode(value);
         if (this.node == null) {
@@ -43,6 +70,15 @@ public class DepthFirstSearch {
         }
     }
 
+    /**
+     * Executes lookup logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the lookup process
+     * @return computed search node result produced by the lookup process
+     */
     public SearchNode lookup(int value) {
         if(node == null) {
             return null;
@@ -60,6 +96,15 @@ public class DepthFirstSearch {
         return null;
     }
 
+    /**
+     * Executes remove logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the remove process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void remove(int value) {
         if (node == null) {
             return;
@@ -105,11 +150,28 @@ public class DepthFirstSearch {
     }
 
     int count = 0;
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void printTree() {
         count = 0;
         printTree(node);
     }
 
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param node input value used by the print tree process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void printTree(SearchNode node) {
         System.out.print(node.getValue());
         System.out.println();
@@ -126,6 +188,15 @@ public class DepthFirstSearch {
     }
 
     // DFS Most of the time used recursive
+    /**
+     * Executes depth first search in oder logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param searchType input value used by the depth first search in oder process
+     * @return computed list<integer> result produced by the depth first search in oder process
+     */
     public List<Integer> depthFirstSearchInOder(SearchType searchType) {
         return depthFirstSearchInOder(node, new ArrayList<>(), searchType);
     }
@@ -134,6 +205,17 @@ public class DepthFirstSearch {
     // Kalo pre order di add sebelum left
     // Kalo in order di add setelah left dan sebelum right
     // Kalo post order di add setelah semuanya, left dan right
+    /**
+     * Executes depth first search in oder logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param node input value used by the depth first search in oder process
+     * @param list input value used by the depth first search in oder process
+     * @param searchType input value used by the depth first search in oder process
+     * @return computed list<integer> result produced by the depth first search in oder process
+     */
     private List<Integer> depthFirstSearchInOder(SearchNode node, ArrayList<Integer> list, SearchType searchType) {
 
         if(searchType == SearchType.PRE_ORDER) {
@@ -156,6 +238,15 @@ public class DepthFirstSearch {
         return list;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
         depthFirstSearch.insert(9);

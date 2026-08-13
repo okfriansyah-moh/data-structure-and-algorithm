@@ -16,11 +16,30 @@ public class MyHashTable {
     private final int length;
     private MyMapForHashs[] data;
 
+    /**
+     * Creates a new {@code MyHashTable} instance for my hash table operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param size input value used by the my hash table process
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public MyHashTable(int size) {
         length = size;
         data = new MyMapForHashs[length];
     }
 
+    /**
+     * Executes set logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param key input value used by the set process
+     * @param value input value used by the set process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void set(String key, int value) {
         if (data[hash(key)] == null) {
             data[hash(key)] = new MyMapForHashs();
@@ -28,6 +47,15 @@ public class MyHashTable {
         data[hash(key)].add(new MyMapForHash(key, value));
     }
 
+    /**
+     * Executes get logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param key input value used by the get process
+     * @return computed int result produced by the get process
+     */
     public int get(String key) {
         if (data[hash(key)] == null) {
             return 0;
@@ -40,6 +68,14 @@ public class MyHashTable {
         return 0;
     }
 
+    /**
+     * Executes keys logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed list<string> result produced by the keys process
+     */
     public List<String> keys() {
         List<String> keys = new ArrayList<>();
         for (int i = 0; i < length; i++) {
@@ -52,6 +88,15 @@ public class MyHashTable {
         return keys;
     }
 
+    /**
+     * Executes hash logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param key input value used by the hash process
+     * @return computed int result produced by the hash process
+     */
     private int hash(String key) {
         int hash = 0;
         for (int i = 0; i < key.length(); i++) {
@@ -60,6 +105,15 @@ public class MyHashTable {
         return hash;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         MyHashTable table = new MyHashTable(50);
         table.set("ta", 1000);

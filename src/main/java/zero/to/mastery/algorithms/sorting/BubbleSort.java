@@ -4,7 +4,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Demonstrates bubble sort concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class BubbleSort {
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(99);
@@ -24,6 +38,15 @@ public class BubbleSort {
     }
 
     // cara pake list
+    /**
+     * Executes bubble sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param data input value used by the bubble sort process
+     * @return computed list<integer> result produced by the bubble sort process
+     */
     private static List<Integer> bubbleSort(List<Integer> data) {
         int arrayLength = data.size();
         int temporal;
@@ -41,6 +64,15 @@ public class BubbleSort {
     }
 
     // cara pake array primitive
+    /**
+     * Executes bubble sort logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param array input value used by the bubble sort process
+     * @return computed integer[] result produced by the bubble sort process
+     */
     public static Integer[] bubbleSort(Integer[] array) {
         int temp;
         for (int i = 0; i < array.length; i++) {

@@ -5,15 +5,37 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * Demonstrates breadth first search concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class BreadthFirstSearch {
 
     private SearchNode node;
 
+    /**
+     * Creates a new {@code BreadthFirstSearch} instance for breadth first search operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public BreadthFirstSearch() {
         node = null;
     }
 
     // insert process in video
+    /**
+     * Executes insert logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the insert process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void insert(int value) {
         SearchNode newNode = new SearchNode(value);
         if (this.node == null) {
@@ -40,6 +62,15 @@ public class BreadthFirstSearch {
         }
     }
 
+    /**
+     * Executes lookup logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the lookup process
+     * @return computed search node result produced by the lookup process
+     */
     public SearchNode lookup(int value) {
         if(node == null) {
             return null;
@@ -57,6 +88,15 @@ public class BreadthFirstSearch {
         return null;
     }
 
+    /**
+     * Executes remove logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the remove process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void remove(int value) {
         if (node == null) {
             return;
@@ -102,11 +142,28 @@ public class BreadthFirstSearch {
     }
 
     int count = 0;
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void printTree() {
         count = 0;
         printTree(node);
     }
 
+    /**
+     * Executes print tree logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param node input value used by the print tree process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void printTree(SearchNode node) {
         System.out.print(node.getValue());
         System.out.println();
@@ -123,6 +180,14 @@ public class BreadthFirstSearch {
     }
 
     // BFS
+    /**
+     * Executes breadth first search iteratively logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed list<integer> result produced by the breadth first search iteratively process
+     */
     public List<Integer> breadthFirstSearchIteratively() {
         SearchNode currentNode = node;
         List<Integer> list = new ArrayList<>();
@@ -148,12 +213,30 @@ public class BreadthFirstSearch {
         return list;
     }
 
+    /**
+     * Executes breadth first search recursively logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed list<integer> result produced by the breadth first search recursively process
+     */
     public List<Integer> breadthFirstSearchRecursively() {
         Queue<SearchNode> queue = new LinkedList<>();
         queue.add(node);
         return breadthFirstSearchRecursively(queue, new ArrayList<>());
     }
 
+    /**
+     * Executes breadth first search recursively logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param queue input value used by the breadth first search recursively process
+     * @param list input value used by the breadth first search recursively process
+     * @return computed list<integer> result produced by the breadth first search recursively process
+     */
     private List<Integer> breadthFirstSearchRecursively(Queue<SearchNode> queue, List<Integer> list) {
         if (queue.isEmpty()) {
             return list;
@@ -170,6 +253,15 @@ public class BreadthFirstSearch {
         return breadthFirstSearchRecursively(queue, list);
     }
     
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
         breadthFirstSearch.insert(9);

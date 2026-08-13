@@ -27,6 +27,14 @@ import java.util.HashMap;
 public class FormulatrixApi {
     public HashMap<String, HashMap<String, Integer>> dataSets = new HashMap<>();
 
+    /**
+     * Executes get json data logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed string result produced by the get json data process
+     */
     public String getJsonData() {
         return "{\n" +
                 "    \"glossary\": {\n" +
@@ -52,6 +60,14 @@ public class FormulatrixApi {
                 "}";
     }
 
+    /**
+     * Executes get xml data logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed string result produced by the get xml data process
+     */
     public String getXmlData() {
         return "<breakfast_menu>\n" +
                 "<food>\n" +
@@ -87,6 +103,15 @@ public class FormulatrixApi {
                 "</breakfast_menu>";
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         FormulatrixApi formulatrixApi = new FormulatrixApi();
         System.out.println("=================================FORMULATRIX TEST==================================");
@@ -121,6 +146,17 @@ public class FormulatrixApi {
         @param itemContent
         @param itemType
      */
+    /**
+     * Executes register logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param itemName input value used by the register process
+     * @param itemContent input value used by the register process
+     * @param itemType input value used by the register process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void register(String itemName, String itemContent, int itemType) {
         if (validateItemType(itemContent, itemType) && checkDataIsPresent(itemName)) {
             HashMap<String,Integer> itemData = new HashMap<>();
@@ -137,6 +173,16 @@ public class FormulatrixApi {
         @param itemContent
         @param itemType
      */
+    /**
+     * Executes validate item type logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param itemContent input value used by the validate item type process
+     * @param itemType input value used by the validate item type process
+     * @return computed boolean result produced by the validate item type process
+     */
     private boolean validateItemType(String itemContent, int itemType) {
         if ((itemType == 1 && itemContent.startsWith("{"))
                 || (itemType == 2 && itemContent.startsWith("<"))) {
@@ -150,6 +196,15 @@ public class FormulatrixApi {
         To avoid from overwriting
         @param itemName
      */
+    /**
+     * Executes check data is present logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param itemName input value used by the check data is present process
+     * @return computed boolean result produced by the check data is present process
+     */
     private boolean checkDataIsPresent(String itemName) {
         boolean isPresent = dataSets.containsKey(itemName);
         System.out.println("Check Data is present by item Name " + itemName
@@ -157,6 +212,16 @@ public class FormulatrixApi {
         return !isPresent;
     }
 
+    /**
+     * Executes save data logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param key input value used by the save data process
+     * @param value input value used by the save data process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void saveData(String key, HashMap<String, Integer> value) {
         dataSets.put(key,value);
         System.out.println("Data successfully saved for " + key);
@@ -165,6 +230,15 @@ public class FormulatrixApi {
     /**
         Retrieve an item from the repository.
         @param itemName
+     */
+    /**
+     * Executes retrieve logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param itemName input value used by the retrieve process
+     * @return computed string result produced by the retrieve process
      */
     public String retrieve(String itemName) {
         String result = "";
@@ -180,6 +254,15 @@ public class FormulatrixApi {
     /**
         Retrieve the type of the item (JSON for 1 or XML for 2).
         @param itemName
+     */
+    /**
+     * Executes get type logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param itemName input value used by the get type process
+     * @return computed int result produced by the get type process
      */
     public int getType(String itemName) {
         int result = 0;

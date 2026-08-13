@@ -1,8 +1,22 @@
 package zero.to.mastery.data_structures.arrays;
 
+/**
+ * Demonstrates reverse string concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class ReverseString {
 
     // reverse method 1
+    /**
+     * Executes reverse string1 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param string input value used by the reverse string1 process
+     * @return computed string result produced by the reverse string1 process
+     */
     private static String ReverseString1(String string) {
         String result = ""; //It's more recommended to use "StringBuilder" object when manipulating strings
         final int length = string.length();
@@ -13,11 +27,29 @@ public class ReverseString {
     }
 
     // reverse method 2
+    /**
+     * Executes reverse string2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param string input value used by the reverse string2 process
+     * @return computed string result produced by the reverse string2 process
+     */
     private static String ReverseString2(String string) {
         return new StringBuilder(string).reverse().toString();
     }
 
     // reverse method 3
+    /**
+     * Executes reverse string3 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param string input value used by the reverse string3 process
+     * @return computed string result produced by the reverse string3 process
+     */
     private static String ReverseString3(String string) {
         StringBuilder temp = new StringBuilder();
         for (int i = string.length() - 1; i >= 0; i--) {
@@ -26,6 +58,15 @@ public class ReverseString {
         return temp.toString();
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         System.out.println(ReverseString1("my name is opy"));
         System.out.println(ReverseString2("my name is ana"));

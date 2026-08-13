@@ -1,21 +1,53 @@
 package zero.to.mastery.data_structures.linked_list.singly;
 
+/**
+ * Demonstrates my singly linked list concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class MySinglyLinkedList {
     private MySinglyLinkedNode head;
     private MySinglyLinkedNode tail;
     private int length;
 
+    /**
+     * Creates a new {@code MySinglyLinkedList} instance for my singly linked list operations.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the my singly linked list process
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public MySinglyLinkedList(int value) {
         head = new MySinglyLinkedNode(value);
         tail = head;
         length = 1;
     }
 
+    /**
+     * Executes prepend logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the prepend process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void prepend(int value) {
         head = new MySinglyLinkedNode(value, head);
         length ++;
     }
 
+    /**
+     * Executes append logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param value input value used by the append process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void append(int value) {
         MySinglyLinkedNode newNode = new MySinglyLinkedNode(value);
         tail.setNext(newNode);
@@ -23,6 +55,14 @@ public class MySinglyLinkedList {
         length ++;
     }
 
+    /**
+     * Executes print list logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void printList() {
         if(head == null) {
             return;
@@ -37,6 +77,16 @@ public class MySinglyLinkedList {
         System.out.println();
     }
 
+    /**
+     * Executes insert logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the insert process
+     * @param value input value used by the insert process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void insert(int index, int value) {
         index = wrapIndex(index);
         if (index == 0) {
@@ -58,6 +108,16 @@ public class MySinglyLinkedList {
     }
 
     // insert method cara 2
+    /**
+     * Executes insert2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the insert2 process
+     * @param value input value used by the insert2 process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void insert2(int index, int value) {
         if (index < 0 || index > length) {
             System.err.println("Index Out Of Bounds For Length " + length);
@@ -77,6 +137,15 @@ public class MySinglyLinkedList {
         }
     }
 
+    /**
+     * Executes remove logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the remove process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void remove(int index) {
         index = wrapIndex(index);
         if(index == 0) {
@@ -91,6 +160,15 @@ public class MySinglyLinkedList {
     }
 
     //remove cara ke 2
+    /**
+     * Executes remove2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the remove2 process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void remove2(int index) {
         if (index < 0 || index > length) {
             System.err.println("Index Out Of Bounds For Length " + length);
@@ -111,6 +189,14 @@ public class MySinglyLinkedList {
         }
     }
 
+    /**
+     * Executes reverse logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void reverse() {
         MySinglyLinkedNode first = head;
         tail = head;
@@ -126,6 +212,15 @@ public class MySinglyLinkedList {
     }
 
     // reverse cara ke 2
+    /**
+     * Executes reverse2 logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param mySinglyLinkedList input value used by the reverse2 process
+     * @return computed my singly linked list result produced by the reverse2 process
+     */
     public MySinglyLinkedList reverse2(MySinglyLinkedList mySinglyLinkedList) {
         MySinglyLinkedList newList = new MySinglyLinkedList(mySinglyLinkedList.head.getValue());
         MySinglyLinkedNode current = mySinglyLinkedList.head;
@@ -139,6 +234,15 @@ public class MySinglyLinkedList {
         return newList;
     }
 
+    /**
+     * Executes traverse to index logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the traverse to index process
+     * @return computed my singly linked node result produced by the traverse to index process
+     */
     public MySinglyLinkedNode traverseToIndex(int index) {
         index = wrapIndex(index);
         MySinglyLinkedNode currentNode = head;
@@ -148,22 +252,64 @@ public class MySinglyLinkedList {
         return currentNode;
     }
 
+    /**
+     * Executes wrap index logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param index input value used by the wrap index process
+     * @return computed int result produced by the wrap index process
+     */
     private int wrapIndex(int index) { //Used for wrapping the given index to make sure it's valid
         return Math.max(Math.min(index, length - 1), 0);
     }
 
+    /**
+     * Executes get head logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed my singly linked node result produced by the get head process
+     */
     public MySinglyLinkedNode getHead() {
         return head;
     }
 
+    /**
+     * Executes get tail logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed my singly linked node result produced by the get tail process
+     */
     public MySinglyLinkedNode getTail() {
         return tail;
     }
 
+    /**
+     * Executes get length logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @return computed int result produced by the get length process
+     */
     public int getLength() {
         return length;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         MySinglyLinkedList mySinglyLinkedList = new MySinglyLinkedList(5);
         mySinglyLinkedList.append(8);

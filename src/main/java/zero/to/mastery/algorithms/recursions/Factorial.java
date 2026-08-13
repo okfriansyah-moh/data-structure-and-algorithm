@@ -1,9 +1,23 @@
 package zero.to.mastery.algorithms.recursions;
 
+/**
+ * Demonstrates factorial concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class Factorial {
 
     /* factorial itu perkalian dari n nya
        misal 5! = 5 * 4 * 3 * 2 * 1
+     */
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
      */
     public static void main(String[] args) {
         System.out.println("Factorial of 5 Recursive = " + findFactorialRecursive(5));
@@ -11,6 +25,15 @@ public class Factorial {
 
     }
 
+    /**
+     * Executes find factorial recursive logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param number input value used by the find factorial recursive process
+     * @return computed int result produced by the find factorial recursive process
+     */
     private static int findFactorialRecursive(int number) {
         if (number == 1) {
             return 1;
@@ -18,6 +41,15 @@ public class Factorial {
         return number * findFactorialRecursive(number-1);
     }
 
+    /**
+     * Executes find factorial iterative logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param number input value used by the find factorial iterative process
+     * @return computed int result produced by the find factorial iterative process
+     */
     private static int findFactorialIterative(int number) {
         int answer = 1;
         while (number > 0) {

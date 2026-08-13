@@ -1,11 +1,25 @@
 package zero.to.mastery.data_structures.arrays;
 
+/**
+ * Demonstrates container with most water concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class ContainerWithMostWater {
 
     // Cari di dalam array jumlah unit water yg paling gede bisa ditampung
 
     // using two shifting pointer technique using O(n)
     // The smallest pointer will move through the iteration
+    /**
+     * Executes max area optimize logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param height input value used by the max area optimize process
+     * @return computed int result produced by the max area optimize process
+     */
     public int maxAreaOptimize(int[] height) {
         int maxArea = 0, p1 = 0, p2 = height.length - 1;
         while (p1 < p2) {
@@ -23,6 +37,15 @@ public class ContainerWithMostWater {
     }
 
     // unOptimize way still using O(n2)
+    /**
+     * Executes max area logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param height input value used by the max area process
+     * @return computed int result produced by the max area process
+     */
     public int maxArea(int[] height) {
         int maxArea = 0;
         for (int a = 0; a < height.length; a++) {
@@ -36,6 +59,18 @@ public class ContainerWithMostWater {
         return maxArea;
     }
 
+    /**
+     * Executes max area logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param a input value used by the max area process
+     * @param b input value used by the max area process
+     * @param indexA input value used by the max area process
+     * @param indexB input value used by the max area process
+     * @return computed int result produced by the max area process
+     */
     private int maxArea(int a, int b, int indexA, int indexB) {
         System.out.println("a = " + a + " b = " + b + " index A = " + indexA + " index B = " + indexB);
         int minValue = Math.min(a,b);
@@ -45,6 +80,15 @@ public class ContainerWithMostWater {
         return minValue * indexValue;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
         int[] intArray = {4,8,1,2,3,9};

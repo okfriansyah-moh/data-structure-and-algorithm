@@ -5,7 +5,21 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates almost palindrome concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class AlmostPalindrome {
+    /**
+     * Executes valid palindrome logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param s input value used by the valid palindrome process
+     * @return computed boolean result produced by the valid palindrome process
+     */
     public boolean validPalindrome(String s) { // space O(1) , time O(n)
         int left = 0, right = s.length()-1;
         while (left < right) {
@@ -21,6 +35,17 @@ public class AlmostPalindrome {
 
     // find the conflict character and try to remove it to check ,
     // if removing either from left or right, is it a palindrome or not
+    /**
+     * Executes valid sub palindrome logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param s input value used by the valid sub palindrome process
+     * @param left input value used by the valid sub palindrome process
+     * @param right input value used by the valid sub palindrome process
+     * @return computed boolean result produced by the valid sub palindrome process
+     */
     private boolean validSubPalindrome(String s , int left, int right) {
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
@@ -32,6 +57,15 @@ public class AlmostPalindrome {
         return true;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         String regions = "[\"BCA\", \"Mandiri\", \"BNI\"]";
         System.out.println(" regions String List --------" + regions);

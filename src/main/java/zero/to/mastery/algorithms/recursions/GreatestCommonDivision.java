@@ -1,5 +1,10 @@
 package zero.to.mastery.algorithms.recursions;
 
+/**
+ * Demonstrates greatest common division concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class to study the implementation flow, expected behavior, and practical output.</p>
+ */
 public class GreatestCommonDivision {
     // what is GCD?
     // GCD itu = greatest common divisor (factor)
@@ -10,6 +15,16 @@ public class GreatestCommonDivision {
     // Complete divisor 24 itu 1,2,3,4,6,8,12,24.
     // GCD nya 1,2,3,6. Dan yang paling besar itu adalah 6.
     // Maka GCD(54,24) = 6
+    /**
+     * Executes gcd logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param a input value used by the gcd process
+     * @param b input value used by the gcd process
+     * @return computed int result produced by the gcd process
+     */
     private static int gcd(int a, int b) {
         if (a < 0 || b < 0) {
             return -1;
@@ -20,6 +35,15 @@ public class GreatestCommonDivision {
         return gcd(b, a%b);
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Explanation: this routine is part of the learning implementation and follows the algorithmic
+     * steps defined in this class.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         System.out.println(gcd(8,4));
     }
