@@ -6,9 +6,23 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 /**
- * Demonstrates search node concepts for data-structure and algorithm practice.
+ * Represents a single node inside a binary search tree.
  *
- * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ * <p>
+ * Each node stores an integer value and references to its left and right
+ * children. This simple structure is
+ * the foundation for binary-tree traversal and searching algorithms such as
+ * breadth-first search (BFS) and
+ * depth-first search (DFS).
+ * </p>
+ *
+ * <p>
+ * Binary search trees maintain the invariant that every value in the left
+ * subtree is smaller than the parent,
+ * while every value in the right subtree is greater than or equal to the
+ * parent. That ordering enables quick lookup,
+ * insertion, and deletion operations.
+ * </p>
  */
 public class SearchNode {
     private int value;
@@ -16,12 +30,16 @@ public class SearchNode {
     private SearchNode right;
 
     /**
-     * Creates a new {@code SearchNode} instance for search node operations.
+     * Creates a new node with a value and no children.
      *
-     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     * <p>
+     * This constructor is used when a new integer is inserted into a binary search
+     * tree. As the tree grows,
+     * the node is placed on the left or right side depending on its value relative
+     * to the current parent.
+     * </p>
      *
-     * @param value input value used by the search node process
-     * Output: initialized object state that is ready for subsequent method calls.
+     * @param value the numeric value stored in the node
      */
     public SearchNode(int value) {
         this.value = value;

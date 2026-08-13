@@ -5,18 +5,29 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Demonstrates selection sort concepts for data-structure and algorithm practice.
+ * Demonstrates the selection sort algorithm using both {@link List} and
+ * array-based inputs.
  *
- * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ * <p>
+ * Selection sort repeatedly chooses the smallest remaining value from the
+ * unsorted portion of the data and swaps
+ * it into the next sorted position. It is easy to follow and performs O(n^2)
+ * comparisons in the worst case, so it is
+ * useful as a conceptual algorithm but not ideal for large collections.
+ * </p>
+ *
+ * <p>
+ * The implementation below intentionally keeps the logic explicit so developers
+ * can see the exact comparison and
+ * swap flow behind the algorithm.
+ * </p>
  */
 public class SelectionSort {
     /**
-     * Executes main logic.
+     * Runs a simple demo that prints the sorted results for both a list and an
+     * array input.
      *
-     * <p>Summary: documents the key steps used by this practice implementation.</p>
-     *
-     * @param args input value used by the main process
-     * Output: updates internal state and/or prints computed results to the console.
+     * @param args command-line arguments; not used by this example
      */
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
@@ -32,18 +43,31 @@ public class SelectionSort {
         numbers.add(4);
         numbers.add(0);
         System.out.println(selectionSort(numbers));
-        Integer[] array = {5, 1, 85, 4, 7, 9, 0, 3, 1};
+        Integer[] array = { 5, 1, 85, 4, 7, 9, 0, 3, 1 };
         Arrays.stream(selectionSort(array)).forEach(System.out::println);
     }
 
-    // using list
     /**
-     * Executes selection sort logic.
+     * Sorts a list in ascending order using selection sort.
      *
-     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     * <p>
+     * For each index {@code i}, the method scans the remainder of the list to find
+     * the minimum value and then swaps
+     * that minimum into the current position. The sorted portion grows from left to
+     * right until the list is complete.
+     * </p>
      *
-     * @param data input value used by the selection sort process
-     * @return computed list<integer> result produced by the selection sort process
+     * <p>
+     * Example:
+     * </p>
+     * 
+     * <pre>
+     * List&lt;Integer&gt; data = List.of(9, 4, 7, 1);
+     * selectionSort(data); // returns [1, 4, 7, 9]
+     * </pre>
+     *
+     * @param data the unsorted list to sort
+     * @return the list after it has been rearranged in ascending order
      */
     private static List<Integer> selectionSort(List<Integer> data) {
         int arrayLength = data.size();
@@ -51,10 +75,9 @@ public class SelectionSort {
         for (int i = 0; i < arrayLength; i++) {
             int min = i;
             temporal = data.get(i);
-            for (int j = i+1; j < arrayLength; j++) {
+            for (int j = i + 1; j < arrayLength; j++) {
                 if (data.get(j) < data.get(min)) {
-                    // update minimum if current is lower
-                    // that what we had previously
+                    // update minimum if the current item is lower than the current minimum
                     min = j;
                 }
             }
@@ -64,26 +87,40 @@ public class SelectionSort {
         return data;
     }
 
-    // using array
     /**
-     * Executes selection sort logic.
+     * Sorts an array in ascending order using selection sort.
      *
-     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     * <p>
+     * This version does the same work as the list variant, but works directly
+     * against an integer array. It keeps a
+     * record of the current minimum value and its index, then swaps it into place
+     * once the scan of the remaining data
+     * has finished.
+     * </p>
      *
-     * @param array input value used by the selection sort process
-     * @return computed integer[] result produced by the selection sort process
+     * <p>
+     * Example:
+     * </p>
+     * 
+     * <pre>
+     * Integer[] values = { 5, 1, 4, 2 };
+     * selectionSort(values); // values becomes [1, 2, 4, 5]
+     * </pre>
+     *
+     * @param array the unsorted integer array to sort in place
+     * @return the sorted array, using the same instance that was passed in
      */
     public static Integer[] selectionSort(Integer[] array) {
         for (int i = 0; i < array.length; i++) {
             int minValue = array[i];
             int minIndex = i;
             for (int j = i + 1; j < array.length; j++) {
-                if (minValue > array[j]) { //Searching min value and it's index
+                if (minValue > array[j]) {
                     minValue = array[j];
                     minIndex = j;
                 }
             }
-            int temp = array[i]; //Swapping the min value found
+            int temp = array[i];
             array[i] = minValue;
             array[minIndex] = temp;
         }
