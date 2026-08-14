@@ -1,8 +1,21 @@
 package zero.to.mastery.data_structures.arrays;
 
+/**
+ * Demonstrates single dimensional array concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class SingleDimensionalArray {
     int arr[] = null;
 
+    /**
+     * Creates a new {@code SingleDimensionalArray} instance for single dimensional array operations.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param sizeOfArray input value used by the single dimensional array process
+     * Output: initialized object state that is ready for subsequent method calls.
+     */
     public SingleDimensionalArray(int sizeOfArray) {
         arr = new int[sizeOfArray];
         for (int i = 0; i < arr.length; i++) {
@@ -10,6 +23,15 @@ public class SingleDimensionalArray {
         }
     }
 
+    /**
+     * Executes insert logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param location input value used by the insert process
+     * @param valueToBeInserted input value used by the insert process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void insert(int location, int valueToBeInserted) {
         try {
             if (arr[location] == Integer.MIN_VALUE) {
@@ -24,6 +46,13 @@ public class SingleDimensionalArray {
     }
 
     // Array traversal
+    /**
+     * Executes traverse array logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void traverseArray() {
         try {
             for (int i = 0; i < arr.length; i++) {
@@ -35,6 +64,14 @@ public class SingleDimensionalArray {
     }
 
     // search for an array element in the given array
+    /**
+     * Executes search in array logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param valueToSearch input value used by the search in array process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void searchInArray(int valueToSearch) {
         for (int i=0; i < arr.length; i++) {
             if (arr[i] == valueToSearch) {
@@ -46,6 +83,14 @@ public class SingleDimensionalArray {
     }
 
     // Delete value from array
+    /**
+     * Executes delete value logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param indexToBeDeleted input value used by the delete value process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public void deleteValue(int indexToBeDeleted) {
         try {
             arr[indexToBeDeleted] = Integer.MIN_VALUE;
@@ -55,6 +100,14 @@ public class SingleDimensionalArray {
         }
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         SingleDimensionalArray singleDimensionalArray = new SingleDimensionalArray(10);
         singleDimensionalArray.insert(0,0);

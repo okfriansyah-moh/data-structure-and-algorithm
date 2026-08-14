@@ -2,8 +2,21 @@ package zero.to.mastery.data_structures;
 
 import java.util.HashMap;
 
+/**
+ * Demonstrates longest substring without repeating char concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class LongestSubstringWithoutRepeatingChar {
 
+    /**
+     * Executes length of longest substring optimize logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param s input value used by the length of longest substring optimize process
+     * @return computed int result produced by the length of longest substring optimize process
+     */
     public int lengthOfLongestSubstringOptimize(String s) {
         if (s.length() <= 1) return s.length();
         HashMap<Character, Integer> seenChars = new HashMap<>();
@@ -20,6 +33,14 @@ public class LongestSubstringWithoutRepeatingChar {
         return longest;
     }
 
+    /**
+     * Executes length of longest substring using while logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param s input value used by the length of longest substring using while process
+     * @return computed int result produced by the length of longest substring using while process
+     */
     public int lengthOfLongestSubstringUsingWhile(String s) {
         int starter = 0;
         int counter = 0;
@@ -45,6 +66,14 @@ public class LongestSubstringWithoutRepeatingChar {
         return tempCounter;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         String a = "abcabcbb";
         String b = "pwwkew";

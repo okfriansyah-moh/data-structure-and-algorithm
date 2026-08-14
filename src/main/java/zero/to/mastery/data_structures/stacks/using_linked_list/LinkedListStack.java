@@ -2,17 +2,36 @@ package zero.to.mastery.data_structures.stacks.using_linked_list;
 
 import java.util.EmptyStackException;
 
+/**
+ * Demonstrates linked list stack concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class LinkedListStack {
   private StackNode top;
   private StackNode bottom;
   private int length;
 
+  /**
+   * Creates a new {@code LinkedListStack} instance for linked list stack operations.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * Output: initialized object state that is ready for subsequent method calls.
+   */
   public LinkedListStack() {
     top = null;
     bottom = null;
     length = 0;
   }
 
+  /**
+   * Executes peak logic.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * @return computed int result produced by the peak process
+   */
   public int peak() {
     if(length == 0) {
       throw new EmptyStackException();
@@ -20,6 +39,13 @@ public class LinkedListStack {
     return top.getValue();
   }
 
+  /**
+   * Executes pop logic.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * @return computed int result produced by the pop process
+   */
   public int pop() {
     if(length == 0) {
       throw new EmptyStackException();
@@ -33,6 +59,14 @@ public class LinkedListStack {
     return tempTop.getValue();
   }
 
+  /**
+   * Executes push logic.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * @param valueToPush input value used by the push process
+   * Output: updates internal state and/or prints computed results to the console.
+   */
   public void push(int valueToPush) {
     top = new StackNode(valueToPush, top);
     if(length == 0) {
@@ -41,6 +75,13 @@ public class LinkedListStack {
     length++;
   }
 
+  /**
+   * Executes print stack logic.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * Output: updates internal state and/or prints computed results to the console.
+   */
   public void printStack() {
     if(top == null) {
       return;
@@ -55,6 +96,14 @@ public class LinkedListStack {
     System.out.println();
   }
 
+  /**
+   * Executes main logic.
+   *
+   * <p>Summary: documents the key steps used by this practice implementation.</p>
+   *
+   * @param args input value used by the main process
+   * Output: updates internal state and/or prints computed results to the console.
+   */
   public static void main(String[] args) {
     LinkedListStack stack = new LinkedListStack();
     stack.push(5);

@@ -2,7 +2,20 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.Arrays;
 
+/**
+ * Demonstrates rotate matrix90d concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class RotateMatrix90d {
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         RotateMatrix90d rotateMatrix90d = new RotateMatrix90d();
         int[][] matrix = {{1,2,3}, {4,5,6}, {7,8,9}};
@@ -29,6 +42,14 @@ public class RotateMatrix90d {
     // 9   6   3
     // Input matrix = [[1,2,3], [4,5,6], [7,8,9]]
     // Output = [[7,4,1],[8,5,2],[9,6,3]]
+    /**
+     * Executes rotate90d logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param matrix input value used by the rotate90d process
+     * @return computed boolean result produced by the rotate90d process
+     */
     public boolean rotate90d(int[][] matrix) {
         System.out.println(Arrays.deepToString(matrix));
         // check if matrix is non an NxN

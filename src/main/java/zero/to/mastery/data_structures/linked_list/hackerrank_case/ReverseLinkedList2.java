@@ -1,5 +1,10 @@
 package zero.to.mastery.data_structures.linked_list.hackerrank_case;
 
+/**
+ * Demonstrates reverse linked list2 concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class ReverseLinkedList2 {
     /*
         Given a Linked List and numbers m and n , return it back with only positions
@@ -18,6 +23,16 @@ public class ReverseLinkedList2 {
         3. Update next value to list so far
         4. Store current Node on list so far
         5. Update current node to stored next value at  steps 2
+     */
+    /**
+     * Executes reverse between logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param head input value used by the reverse between process
+     * @param left input value used by the reverse between process
+     * @param right input value used by the reverse between process
+     * @return computed list node result produced by the reverse between process
      */
     public ListNode reverseBetween(ListNode head, int left, int right) {
         int currentPos = 1;
@@ -47,10 +62,34 @@ public class ReverseLinkedList2 {
     }
 }
 
+/**
+ * Demonstrates list node concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 class ListNode {
     int val;
     ListNode next;
+    /**
+     * Creates an empty node with default field values.
+     *
+     * <p>Output: node instance where {@code val} uses default integer value and
+     * {@code next} is {@code null}.</p>
+     */
     ListNode() {}
+    /**
+     * Creates a node with a value and no next link.
+     *
+     * @param val integer payload to store in the node
+     * Output: node instance initialized with {@code val} and {@code next = null}.
+     */
     ListNode(int val) { this.val = val; }
+    /**
+     * Creates a node with both value and next-node reference.
+     *
+     * @param val integer payload to store in the node
+     * @param next link to the subsequent node
+     * Output: fully initialized node for linked-list chaining.
+     */
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }

@@ -2,6 +2,11 @@ package zero.to.mastery;
 
 import java.util.Arrays;
 
+/**
+ * Demonstrates binary search start and end of target concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class BinarySearchStartAndEndOfTarget {
     /**
      * example
@@ -30,6 +35,17 @@ public class BinarySearchStartAndEndOfTarget {
         return new int[]{startPos,endPost};
     }
 
+    /**
+     * Executes binary search logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param nums input value used by the binary search process
+     * @param left input value used by the binary search process
+     * @param right input value used by the binary search process
+     * @param target input value used by the binary search process
+     * @return computed int result produced by the binary search process
+     */
     public int binarySearch(int[] nums, int left, int right, int target) {
         while (left <= right) {
             var mid = (int) (Math.floor((left=right)/2));

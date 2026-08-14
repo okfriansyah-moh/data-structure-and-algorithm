@@ -1,6 +1,20 @@
 package zero.to.mastery.data_structures.arrays;
 
+/**
+ * Demonstrates find number in array concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class FindNumberInArray {
+    /**
+     * Executes search in array logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param intArray input value used by the search in array process
+     * @param valueToSearch input value used by the search in array process
+     * @return computed int result produced by the search in array process
+     */
     public int searchInArray(int[] intArray, int valueToSearch) {
         // TODO
         int count = 0;
@@ -13,6 +27,14 @@ public class FindNumberInArray {
         throw new IllegalArgumentException("No data found");
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         FindNumberInArray findNumberInArray = new FindNumberInArray();
         int[] intArray = {1,2,3,4,5,6};

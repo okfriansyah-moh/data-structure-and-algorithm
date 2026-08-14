@@ -2,7 +2,21 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.Scanner;
 
+/**
+ * Demonstrates calculate temp array concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class CalculateTempArray {
+    /**
+     * Executes calc temp logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param numDays input value used by the calc temp process
+     * @param temp input value used by the calc temp process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void calcTemp(int numDays, int temp) {
         int[] temps = new int[numDays];
         int sum = 0;
@@ -25,6 +39,14 @@ public class CalculateTempArray {
         System.out.println(above + " days above average");
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many days temp ? ");

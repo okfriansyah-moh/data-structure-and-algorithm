@@ -3,7 +3,20 @@ package zero.to.mastery.data_structures.linked_list.hackerrank_case;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/**
+ * Demonstrates insert head concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class insertHead {
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         LinkedList<Integer> data = new LinkedList<>();
@@ -27,6 +40,13 @@ public class insertHead {
     3d : here 3 denotes integer's minimum field width 3.
     %n : prints the new line.
      */
+    /**
+     * Executes formatting data logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void formattingData() {
         Scanner sc=new Scanner(System.in);
         System.out.println("================================");
@@ -48,6 +68,13 @@ public class insertHead {
     sample output :
         2 6 14 30 62 126 254 510 1022 2046
         8 14 26 50 98
+     */
+    /**
+     * Executes exponential logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
      */
     private void exponential() {
         Scanner scanner = new Scanner(System.in);

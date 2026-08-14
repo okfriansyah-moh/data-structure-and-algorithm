@@ -1,5 +1,10 @@
 package zero.to.mastery.data_structures.arrays;
 
+/**
+ * Demonstrates trapping rain water concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class TrappingRainWater {
 
     // optimize using two pointers technique
@@ -11,6 +16,14 @@ public class TrappingRainWater {
     // And while we were moving them inwards,
     // we were collecting some information that we had determined based
     // on our equation.
+    /**
+     * Executes trap3 logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the trap3 process
+     * @return computed int result produced by the trap3 process
+     */
     public int trap3(int[] height) {
         int currentWater = 0,
                 maxLeft = 0,
@@ -30,6 +43,14 @@ public class TrappingRainWater {
         return currentWater;
     }
 
+    /**
+     * Executes trap4 logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the trap4 process
+     * @return computed int result produced by the trap4 process
+     */
     public int trap4(int[] height) {
         int currentWater = 0,
                 maxLeft = 0,
@@ -56,6 +77,14 @@ public class TrappingRainWater {
     }
 
     // unOptimize solution using for loop all
+    /**
+     * Executes trap logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the trap process
+     * @return computed int result produced by the trap process
+     */
     public int trap(int[] height) {
         int result = 0;
         for (int i = 0; i < height.length; i++) {
@@ -74,6 +103,14 @@ public class TrappingRainWater {
     }
 
     // unOptimize solution using for loop and while loop
+    /**
+     * Executes trap2 logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the trap2 process
+     * @return computed int result produced by the trap2 process
+     */
     public int trap2(int[] height) {
         int result = 0;
         for (int i = 0; i < height.length; i++) {
@@ -92,6 +129,15 @@ public class TrappingRainWater {
     }
 
     // using for loop
+    /**
+     * Executes max right for logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the max right for process
+     * @param startingIndex input value used by the max right for process
+     * @return computed int result produced by the max right for process
+     */
     private int maxRightFor(int[] height, int startingIndex) {
         int result = 0;
         for (int i = startingIndex; i < height.length; i++) {
@@ -103,6 +149,15 @@ public class TrappingRainWater {
     }
 
     //using while loop
+    /**
+     * Executes max right while logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param rightP input value used by the max right while process
+     * @param heigth input value used by the max right while process
+     * @return computed int result produced by the max right while process
+     */
     private int maxRightWhile(int rightP, int [] heigth) {
         int maxRight = 0;
         while (rightP < heigth.length) {
@@ -113,6 +168,15 @@ public class TrappingRainWater {
     }
 
     // using for loop
+    /**
+     * Executes max left for logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param height input value used by the max left for process
+     * @param startingIndex input value used by the max left for process
+     * @return computed int result produced by the max left for process
+     */
     private int maxLeftFor(int[] height, int startingIndex) {
         if (startingIndex == 0) return 0;
         int result = 0;
@@ -125,6 +189,15 @@ public class TrappingRainWater {
     }
 
     //using while loop
+    /**
+     * Executes max left while logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param leftP input value used by the max left while process
+     * @param heigth input value used by the max left while process
+     * @return computed int result produced by the max left while process
+     */
     private int maxLeftWhile(int leftP, int [] heigth) {
         int maxLeft = 0;
         while (leftP >= 0) {
@@ -134,6 +207,14 @@ public class TrappingRainWater {
         return maxLeft;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         TrappingRainWater trappingRainWater = new TrappingRainWater();
         int[] intArray = {5,0,3,0,0,0,2,3,4,2,1};

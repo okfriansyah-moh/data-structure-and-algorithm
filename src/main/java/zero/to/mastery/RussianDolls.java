@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Demonstrates russian dolls concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class RussianDolls {
     /**
      * Print an integer representing
@@ -30,6 +35,14 @@ public class RussianDolls {
         return dupCount % 2 == 0 ? dupCount : dupCount+1;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         RussianDolls russianDolls = new RussianDolls();
         List<Integer> dolls = new ArrayList<>();

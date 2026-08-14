@@ -6,6 +6,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Demonstrates hacker rank arrays case concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class HackerRankArraysCase {
 
     //palindrome using 2pointers from center
@@ -95,6 +100,13 @@ public class HackerRankArraysCase {
     }
 
     //Common array function, to convert int into an array
+    /**
+     * Executes convert integ to arra logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void convertIntegToArra() {
         int number = 110101;
         String temp = Integer.toString(number);
@@ -114,6 +126,14 @@ public class HackerRankArraysCase {
        e f g
      */
 
+    /**
+     * Executes hourglass sum logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param arr input value used by the hourglass sum process
+     * @return computed int result produced by the hourglass sum process
+     */
     public static int hourglassSum(List<List<Integer>> arr) {
         // Write your code here
         Integer result = Integer.MIN_VALUE;
@@ -135,6 +155,15 @@ public class HackerRankArraysCase {
     //Array.pop     -> ArrayList.remove(int index); // Remove list[index]
     //Array.shift   -> ArrayList.remove(0); // Remove first element
     //Array.unshift -> ArrayList.add(int index, Object o); // Prepend the list
+    /**
+     * Executes rotate left logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param d input value used by the rotate left process
+     * @param arr input value used by the rotate left process
+     * @return computed list<integer> result produced by the rotate left process
+     */
     public static List<Integer> rotateLeft(int d, List<Integer> arr) {
         // Write your code here
         // remove first add last
@@ -166,6 +195,14 @@ public class HackerRankArraysCase {
      *
      */
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         List<String> strings = new ArrayList<>();
         strings.add("23123");
@@ -178,6 +215,15 @@ public class HackerRankArraysCase {
         System.out.println(Arrays.toString(matchingStringsArray(a, b)));
     }
 
+    /**
+     * Executes matching strings logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param strings input value used by the matching strings process
+     * @param queries input value used by the matching strings process
+     * @return computed list<integer> result produced by the matching strings process
+     */
     public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
         // Write your code here
         List<Integer> result = new ArrayList<>();
@@ -196,6 +242,15 @@ public class HackerRankArraysCase {
 
     }
 
+    /**
+     * Executes matching strings array logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param strings input value used by the matching strings array process
+     * @param queries input value used by the matching strings array process
+     * @return computed integer[] result produced by the matching strings array process
+     */
     public static Integer[] matchingStringsArray(String[] strings, String[] queries) {
         // Write your code here
         List<Integer> result = new ArrayList<>();
@@ -215,6 +270,15 @@ public class HackerRankArraysCase {
 
     }
 
+    /**
+     * Executes occurences logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param strings input value used by the occurences process
+     * @param queries input value used by the occurences process
+     * @return computed string result produced by the occurences process
+     */
     public static String occurences( String[] strings, String[] queries ) {
 
         //Insert your code here
@@ -247,6 +311,13 @@ public class HackerRankArraysCase {
 
 
     // Print even and odd case in java
+    /**
+     * Executes java case hr logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     private void javaCaseHR() {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextInt()) {
@@ -273,6 +344,15 @@ public class HackerRankArraysCase {
      return true or false
      */
     HashSet<Integer> data = new HashSet<>();
+    /**
+     * Executes contains common item logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param arr1 input value used by the contains common item process
+     * @param arr2 input value used by the contains common item process
+     * @return computed boolean result produced by the contains common item process
+     */
     private boolean containsCommonItem(String[] arr1, String[] arr2) {
 
         for (var i=0; i < arr1.length; i++) {

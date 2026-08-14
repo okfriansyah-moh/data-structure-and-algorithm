@@ -2,9 +2,23 @@ package zero.to.mastery.data_structures.arrays;
 
 import java.util.Arrays;
 
+/**
+ * Demonstrates merge sorted array concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class MergeSortedArray {
 
     // Method 1
+    /**
+     * Executes marge two sorted array1 logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param array1 input value used by the marge two sorted array1 process
+     * @param array2 input value used by the marge two sorted array1 process
+     * @return computed int[] result produced by the marge two sorted array1 process
+     */
     public static int[] MargeTwoSortedArray1(int[] array1, int[] array2) {
         final int[] mergedArray = new int[array1.length + array2.length];
         int j = 0, k = 0;
@@ -21,6 +35,15 @@ public class MergeSortedArray {
     }
 
     // Method 2
+    /**
+     * Executes merge arrays logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param arr1 input value used by the merge arrays process
+     * @param arr2 input value used by the merge arrays process
+     * @return computed int[] result produced by the merge arrays process
+     */
     private int[] mergeArrays(int[] arr1, int[] arr2) {
         // i is index count of arr1
         // j is index count of arr2
@@ -66,6 +89,14 @@ public class MergeSortedArray {
         return mergedArray;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         int[] arr = MargeTwoSortedArray1(new int[]{1,1,8,9,10}, new int[]{1,2,8,9,11,15,16});
         Arrays.stream(arr).forEach(System.out::println);

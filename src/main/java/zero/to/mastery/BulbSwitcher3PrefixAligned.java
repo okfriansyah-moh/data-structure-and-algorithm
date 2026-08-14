@@ -1,6 +1,19 @@
 package zero.to.mastery;
 
+/**
+ * Demonstrates bulb switcher3 prefix aligned concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class BulbSwitcher3PrefixAligned {
+    /**
+     * Executes num times all blue logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param flips input value used by the num times all blue process
+     * @return computed int result produced by the num times all blue process
+     */
     public int numTimesAllBlue(int[] flips) {
         String binary = "";
         int result = 0;
@@ -25,6 +38,16 @@ public class BulbSwitcher3PrefixAligned {
         return result;
     }
 
+    /**
+     * Executes check logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param binary input value used by the check process
+     * @param index input value used by the check process
+     * @param binary2 input value used by the check process
+     * @return computed boolean result produced by the check process
+     */
     private boolean check(String binary, int index, String binary2) {
         int indexCheck = index+1;
         if (binary.substring(0, indexCheck).equals(binary2)) {
@@ -41,6 +64,14 @@ public class BulbSwitcher3PrefixAligned {
         return false;
     }
 
+    /**
+     * Executes num times all blue2 logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param flips input value used by the num times all blue2 process
+     * @return computed int result produced by the num times all blue2 process
+     */
     public int numTimesAllBlue2(int[] flips) {
         int sum1=0, sum2=0, count=0;
         for(int i=0;i<flips.length;i++){
@@ -53,6 +84,14 @@ public class BulbSwitcher3PrefixAligned {
         return count;
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         int[] intArray = {4,1,2,3};
         BulbSwitcher3PrefixAligned bulbSwitcher3PrefixAligned = new BulbSwitcher3PrefixAligned();

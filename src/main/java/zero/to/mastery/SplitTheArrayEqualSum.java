@@ -3,6 +3,11 @@ package zero.to.mastery;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates split the array equal sum concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class SplitTheArrayEqualSum {
 
     /** You are Given an array consisting of n positive integers.
@@ -10,6 +15,14 @@ public class SplitTheArrayEqualSum {
         of the elemets on one side is equal to the sum of the elements on
         the other side. Otherwise , print No.
      **/
+    /**
+     * Executes solve logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param ar input value used by the solve process
+     * @return computed string result produced by the solve process
+     */
     public String solve(List<Integer> ar) {
         int p1 = 0; // a pointer to start of array
         int p2 = ar.size()-1; // a pointer to end of array
@@ -59,6 +72,14 @@ public class SplitTheArrayEqualSum {
         return "NO";
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         SplitTheArrayEqualSum splitTheArray = new SplitTheArrayEqualSum();
         List<Integer> a = new ArrayList<>();

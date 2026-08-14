@@ -1,5 +1,10 @@
 package zero.to.mastery.algorithms.recursions;
 
+/**
+ * Demonstrates powers of numbers concepts for data-structure and algorithm practice.
+ *
+ * <p>Use this class as a quick reference for the core algorithm flow.</p>
+ */
 public class PowersOfNumbers {
     // How to calculate power of a number using recursion?
     // Ex : x^n = x * x * x * x (n times)
@@ -8,6 +13,15 @@ public class PowersOfNumbers {
     // x^3 * x^4 = x^7
     // the stop condition is jika 2^0 = 1 dan 2^1 = 2
     // the stop condition is kalo n = 0 itu pasti 1 dan n = 1 itu sama dengan n itu sendiri
+    /**
+     * Executes power logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param base input value used by the power process
+     * @param exp input value used by the power process
+     * @return computed int result produced by the power process
+     */
     private static int power(int base, int exp) {
         if (exp < 0) {
             return -1;
@@ -18,6 +32,14 @@ public class PowersOfNumbers {
         return base * power(base, exp-1);
     }
 
+    /**
+     * Executes main logic.
+     *
+     * <p>Summary: documents the key steps used by this practice implementation.</p>
+     *
+     * @param args input value used by the main process
+     * Output: updates internal state and/or prints computed results to the console.
+     */
     public static void main(String[] args) {
         System.out.println(power(10,9));
     }
